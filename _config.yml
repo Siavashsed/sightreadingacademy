@@ -1,8 +1,8 @@
 title: Sightreading Academy
 description: Master sight-reading and music theory
 theme: minima
-baseurl: "/sightreadingacademy"
-url: "https://siavashsed.github.io"
+baseurl: ""
+url: "https://sightreadingacademy.com"
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 show_excerpts: true
