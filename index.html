@@ -1,102 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sight Reading Academy — Build Real Musical Fluency</title>
-<meta name="description" content="Systematic sight-reading instruction from a Juilliard-trained concert pianist. Build real fluency, not just familiarity.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>siavashsed.github.io/sightreadingacademy — Music Education</title>
+<meta name="description" content="Expert insights on music education">
+
+
+
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{  --bg:#fffef7;--bg2:#f8f7ec;--sur:#f0efe0;
-  --pri:#166534;--pri2:#15803d;
-  --txt:#141c10;--mut:#607850;--brd:#d4d8b8;
-  --fh:Georgia,serif;--fb:system-ui,sans-serif;--fm:monospace;}
-body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.75}
-a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
-.lf-top{display:flex;align-items:center;justify-content:space-between;padding:18px 52px;border-bottom:1px solid var(--brd);background:var(--bg)}
-.lf-brand{font-family:var(--fh);font-size:22px;font-weight:700;color:var(--txt);letter-spacing:-0.5px;text-decoration:none}
-.lf-brand em{color:var(--pri);font-style:normal}
-.lf-nav{display:flex;gap:28px}.lf-nav a{font-size:13px;color:var(--mut);font-weight:500;transition:color .2s}.lf-nav a:hover{color:var(--txt);text-decoration:none}
-.lf-stage{background:var(--bg2);border-bottom:1px solid var(--brd);padding:64px 52px 52px}
-.lf-stage-eyebrow{font-size:11px;font-weight:700;color:var(--pri);text-transform:uppercase;letter-spacing:3px;margin-bottom:16px}
-.lf-stage h1{font-family:var(--fh);font-size:clamp(26px,3.5vw,46px);font-weight:700;line-height:1.15;max-width:640px;margin-bottom:16px;color:var(--txt)}
-.lf-stage p{color:var(--mut);font-size:16px;max-width:540px;line-height:1.85}
-.lf-reading{padding:56px 52px;max-width:1160px;margin:0 auto}
-.lf-reading-hd{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--mut);margin-bottom:28px;padding-bottom:10px;border-bottom:1px solid var(--brd)}
-.lf-stream{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:28px}
-.lf-post{background:var(--bg2);border-radius:10px;overflow:hidden;border:1px solid var(--brd);display:flex;flex-direction:column;transition:box-shadow .2s}
-.lf-post:hover{box-shadow:0 6px 24px rgba(0,0,0,.08)}
-.lf-post-body{padding:22px 22px 18px;flex:1;display:flex;flex-direction:column;gap:8px}
-.lf-post-label{font-size:10px;font-weight:700;color:var(--pri);text-transform:uppercase;letter-spacing:2px}
-.lf-post h2{font-family:var(--fh);font-size:17px;font-weight:700;line-height:1.35;color:var(--txt)}
-.lf-post p{font-size:13px;color:var(--mut);line-height:1.75;flex:1}
-.lf-post-foot{padding:0 22px 18px;display:flex;justify-content:space-between;align-items:center}
-.lf-post-date{font-size:11px;color:var(--mut)}
-.lf-post-link{font-size:13px;font-weight:600;color:var(--pri)}
-.lf-join{background:var(--bg2);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);padding:64px 52px;display:flex;gap:60px;align-items:center}
-.lf-join-text h2{font-family:var(--fh);font-size:clamp(20px,2.5vw,30px);font-weight:700;margin-bottom:10px;line-height:1.2}
-.lf-join-text p{color:var(--mut);font-size:14px;line-height:1.8}
-.lf-join-form{flex-shrink:0;width:340px}
-.lf-join-form p{color:var(--mut);font-size:13px;margin-bottom:12px}
-.lf-nl-input{width:100%;border:1px solid var(--brd);background:var(--bg);border-radius:6px;padding:11px 14px;font-size:14px;color:var(--txt);outline:none;margin-bottom:10px;transition:border-color .2s}
-.lf-nl-input:focus{border-color:var(--pri)}.lf-nl-input::placeholder{color:var(--mut)}
-.lf-nl-btn{width:100%;background:var(--pri);color:#fff;border:none;border-radius:6px;padding:11px;font-size:14px;font-weight:700;cursor:pointer;transition:background .2s}
-.lf-nl-btn:hover{background:var(--pri2)}.lf-nl-ok{color:var(--pri);font-weight:600;font-size:14px;padding:8px 0;text-align:center}
-.lf-basement{padding:24px 52px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
-.lf-foot-copy{font-size:12px;color:var(--mut)}
-.lf-foot-links{display:flex;gap:20px}.lf-foot-links a{font-size:12px;color:var(--mut)}.lf-foot-links a:hover{color:var(--pri);text-decoration:none}
-@media(max-width:760px){.lf-top{padding:14px 16px}.lf-stage{padding:40px 16px 32px}.lf-reading{padding:36px 16px}.lf-join{flex-direction:column;padding:48px 16px;gap:32px}.lf-join-form{width:100%}.lf-basement{padding:20px 16px;flex-direction:column;text-align:center}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Georgia',serif;background:#ffffff;color:#111111;line-height:1.65;font-size:16px}
+a{color:#2563eb;text-decoration:none}
+a:hover{color:#1d4ed8}
+img{max-width:100%;display:block;height:auto}
+
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.hdr{background:#ffffff;border-bottom:1px solid #e2e5ea;padding:20px 0;text-align:center}
+.logo{font-size:28px;font-weight:800;color:#2563eb;display:block;margin-bottom:4px}
+.tagline{font-size:12px;color:#999;text-transform:uppercase;letter-spacing:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:24px;margin-top:40px}
 </style>
 </head>
 <body>
-<div class="lf-top">
-  <a href="/" class="lf-brand">Sight <em>Reading Academy</em></a>
-  <nav class="lf-nav"><a href="/">Home</a><a href="/about.html">About</a></nav>
+<div class="hdr">
+  <a href="/" class="logo">siavashsed.github.io/sightreadingacademy</a>
+  <span class="tagline">Music Education</span>
 </div>
-<div class="lf-stage">
-  <div class="lf-stage-eyebrow">Music Education</div>
-  <h1>Build Real Musical Fluency</h1>
-  <p>Systematic sight-reading instruction from a Juilliard-trained concert pianist. Build real fluency, not just familiarity.</p>
+<div class="wrap">
+  <div style="margin:40px 0"><div style="background:url(https://images.pexels.com/photos/5766750/pexels-photo-5766750.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center/cover;height:420px;border-radius:12px;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,transparent 60%)"></div><div style="position:absolute;bottom:0;left:0;right:0;padding:28px"><span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#2563eb">Music Education</span><br><a href="/sight-reading-practice-without-bad-habits/" style="font-size:clamp(22px,4vw,34px);font-weight:700;color:#fff;line-height:1.2;display:block;margin:8px 0">How to Practice Sight-Reading Without Wiring in Bad Habits</a><span style="font-size:13px;color:rgba(255,255,255,.7)">May 15, 2026</span></div></div></div>
+  <div class="grid"></div>
 </div>
-<div class="lf-reading">
-  <div class="lf-reading-hd">Latest Reading</div>
-  <div class="lf-stream" id="lf-stream"></div>
-</div>
-<div class="lf-join">
-  <div class="lf-join-text">
-    <h2>The Music Letter</h2>
-    <p>Written by Professor Laura Kim, juilliard-trained pianist & music educator.</p>
-  </div>
-  <div class="lf-join-form">
-    <p>Monthly practice insights and sight-reading methodology for serious students.</p>
-    <form id="lf-nl" onsubmit="nlSub(event)">
-      <input type="email" class="lf-nl-input" placeholder="your@email.com" required>
-      <button type="submit" class="lf-nl-btn">Join the list</button>
-    </form>
-  </div>
-</div>
-<div class="lf-basement">
-  <span class="lf-foot-copy">© Sight Reading Academy · Evidence-based sight-reading instruction for piano and keyboard students.</span>
-  <div class="lf-foot-links"><a href="/">Home</a><a href="/about.html">About</a></div>
-</div>
-<script>
-async function loadPosts(){
-  const el=document.getElementById('lf-stream');
-  try{
-    const r=await fetch('./articles.json');if(!r.ok)throw 0;
-    const posts=await r.json();if(!posts.length)throw 0;
-    el.innerHTML=posts.slice(0,9).map(p=>`<div class="lf-post">
-      <div class="lf-post-body">
-        <div class="lf-post-label">Music Education</div>
-        <h2>${p.title}</h2>
-        <p>${p.meta_description||''}</p>
-      </div>
-      <div class="lf-post-foot"><span class="lf-post-date">${p.date_iso||''}</span><a class="lf-post-link" href="./${p.slug||'#'}">Read more →</a></div>
-    </div>`).join('');
-  }catch(e){
-    el.innerHTML='<div class="lf-post"><div class="lf-post-body"><div class="lf-post-label">Coming Soon</div><h2>New articles on the way</h2><p>Check back shortly.</p></div></div>';
-  }
-}
-function nlSub(e){e.preventDefault();document.getElementById('lf-nl').innerHTML='<div class="lf-nl-ok">✓ Welcome to the list.</div>';}
-loadPosts();
-</script>
-</body></html>
+<footer style="background:#f7f8fa;border-top:1px solid #e2e5ea;padding:40px 24px;text-align:center;font-size:13px;color:#999;margin-top:60px">
+<p>&copy; 2026 siavashsed.github.io/sightreadingacademy &nbsp;&middot;&nbsp; Music Education</p>
+<p style="margin-top:6px;font-size:11px">For informational purposes only. Not financial or investment advice.</p>
+<p style="margin-top:6px;font-size:11px"><a href="/about/" style="color:#999">About</a> &nbsp;&middot;&nbsp; <a href="/contact/" style="color:#999">Contact</a> &nbsp;&middot;&nbsp; <a href="/privacy/" style="color:#999">Privacy Policy</a></p>
+</footer></body></html>
