@@ -23,5 +23,17 @@
       "musictheory.net",
       "jrme.sagepub.com"
     ]
+  },
+  {
+    "title": "Why Rhythm Is Harder to Fix Than Pitch in Sight-Reading (And What to Do About It)",
+    "slug": "rhythm-harder-fix-than-pitch",
+    "meta_description": "Rhythm errors in sight-reading are harder to fix than pitch mistakes. Professor Laura Kim explains why \u2014 and how to retrain your rhythmic instincts.",
+    "date": "May 15, 2026",
+    "date_iso": "2026-05-15",
+    "author": "Professor Laura Kim",
+    "image": "https://images.pexels.com/photos/37230257/pexels-photo-37230257.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "musicperception.ucpress.edu"
+    ]
   }
 ]
