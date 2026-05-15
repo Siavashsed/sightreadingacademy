@@ -2,53 +2,105 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About Professor Laura Kim — Sight Reading Academy</title>
+<title>About Professor Laura Kim - Sight Reading Academy</title>
 <meta name="description" content="Evidence-based sight-reading instruction for piano and keyboard students.">
 <style>
+/* === reset === */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{  --bg:#fffef7;--bg2:#f8f7ec;--sur:#f0efe0;
   --pri:#166534;--pri2:#15803d;
   --txt:#141c10;--mut:#607850;--brd:#d4d8b8;
   --fh:Georgia,serif;--fb:system-ui,sans-serif;--fm:monospace;}
-body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.75}
+body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.8}
 a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
+/* === nav === */
 .lf-top{display:flex;align-items:center;justify-content:space-between;padding:18px 52px;border-bottom:1px solid var(--brd);background:var(--bg)}
 .lf-brand{font-family:var(--fh);font-size:22px;font-weight:700;color:var(--txt);text-decoration:none}
 .lf-brand em{color:var(--pri);font-style:normal}
 .lf-nav{display:flex;gap:28px}.lf-nav a{font-size:13px;color:var(--mut);font-weight:500}.lf-nav a:hover{color:var(--txt);text-decoration:none}
-.abt-header{background:var(--bg2);border-bottom:1px solid var(--brd);padding:56px 52px;display:flex;align-items:center;gap:40px}
-.abt-avi{width:76px;height:76px;border-radius:50%;background:var(--pri);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:24px;font-weight:700;color:#fff;flex-shrink:0;border:3px solid var(--bg)}
-.abt-header h1{font-family:var(--fh);font-size:clamp(22px,3vw,36px);font-weight:700;margin-bottom:4px}
-.abt-header-role{font-size:14px;color:var(--pri);font-weight:600}
-.abt-main{max-width:700px;margin:0 auto;padding:52px 52px}
-.abt-section{margin-bottom:36px}
-.abt-section h2{font-family:var(--fh);font-size:18px;font-weight:700;color:var(--txt);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--brd)}
-.abt-section p{color:var(--mut);line-height:1.85;margin-bottom:14px}
-.lf-nl-box{background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:28px;margin-top:8px}
-.lf-nl-box h3{font-family:var(--fh);font-size:20px;font-weight:700;margin-bottom:8px}
-.lf-nl-box p{color:var(--mut);font-size:14px;margin-bottom:16px}
+/* === author header === */
+.la-header{background:var(--bg2);border-bottom:1px solid var(--brd);padding:52px 52px 44px}
+.la-header-inner{display:flex;align-items:center;gap:36px}
+.la-avi{width:80px;height:80px;border-radius:50%;background:var(--pri);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:26px;font-weight:700;color:#fff;flex-shrink:0;border:4px solid var(--bg)}
+.la-header h1{font-family:var(--fh);font-size:clamp(22px,3vw,36px);font-weight:700;margin-bottom:4px}
+.la-role{font-size:14px;color:var(--pri);font-weight:600}
+.la-cat{font-size:12px;color:var(--mut);margin-top:4px}
+/* === main body === */
+.la-body{max-width:680px;margin:0 auto;padding:52px 52px}
+.la-section{margin-bottom:40px}
+.la-section-hd{font-family:var(--fh);font-size:20px;font-weight:700;color:var(--txt);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--pri)}
+.la-p{color:var(--mut);line-height:1.9;margin-bottom:16px}
+/* === pull quote === */
+.la-quote{border-left:3px solid var(--pri);padding:12px 20px;margin:20px 0 28px;background:var(--bg2);border-radius:0 6px 6px 0}
+.la-quote p{font-family:var(--fh);font-size:16px;color:var(--txt);line-height:1.7;font-style:italic}
+/* === newsletter === */
+.la-nl{background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:28px;margin-top:8px}
+.la-nl h3{font-family:var(--fh);font-size:20px;font-weight:700;margin-bottom:8px}
+.la-nl p{color:var(--mut);font-size:14px;margin-bottom:16px}
 .lf-nl-input{width:100%;border:1px solid var(--brd);background:var(--bg);border-radius:6px;padding:11px 14px;font-size:14px;color:var(--txt);outline:none;margin-bottom:10px;transition:border-color .2s}
 .lf-nl-input:focus{border-color:var(--pri)}.lf-nl-input::placeholder{color:var(--mut)}
 .lf-nl-btn{background:var(--pri);color:#fff;border:none;border-radius:6px;padding:11px 24px;font-size:14px;font-weight:700;cursor:pointer;transition:background .2s}
 .lf-nl-btn:hover{background:var(--pri2)}.lf-nl-ok{color:var(--pri);font-weight:600;padding:6px 0}
+/* === footer === */
 .lf-basement{padding:24px 52px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-top:20px}
 .lf-foot-copy{font-size:12px;color:var(--mut)}.lf-foot-links{display:flex;gap:20px}.lf-foot-links a{font-size:12px;color:var(--mut)}
-@media(max-width:600px){.lf-top{padding:14px 16px}.abt-header{padding:36px 16px;flex-direction:column;gap:16px}.abt-main{padding:36px 16px}.lf-basement{padding:20px 16px}}
+@media(max-width:640px){.lf-top{padding:14px 16px}.la-header{padding:32px 16px 28px}.la-header-inner{flex-direction:column;gap:16px}.la-body{padding:32px 16px}.lf-basement{padding:20px 16px;flex-direction:column;text-align:center}}
 </style>
 </head>
 <body>
+
+<!-- nav -->
 <div class="lf-top">
-  <a href="/" class="lf-brand">Sight <em>Reading Academy</em></a>
-  <nav class="lf-nav"><a href="/">Home</a><a href="/about.html">About</a></nav>
+  <a href="./" class="lf-brand">Sight <em>Reading Academy</em></a>
+  <nav class="lf-nav"><a href="./">Home</a><a href="about.html">About</a></nav>
 </div>
-<div class="abt-header">
-  <div class="abt-avi">PLK</div>
-  <div><h1>Professor Laura Kim</h1><div class="abt-header-role">Juilliard-Trained Pianist & Music Educator</div></div>
+
+<!-- author-header -->
+<div class="la-header">
+  <div class="la-header-inner">
+    <div class="la-avi">PLK</div>
+    <div>
+      <h1>Professor Laura Kim</h1>
+      <div class="la-role">Juilliard-Trained Pianist & Music Educator</div>
+      <div class="la-cat">Music Education</div>
+    </div>
+  </div>
 </div>
-<div class="abt-main">
-  <div class="abt-section"><h2>Background</h2><p>Twenty years of teaching piano at the conservatory level, plus a concert performance career that required reading hundreds of new scores under pressure, gave me a very specific perspective on sight-reading.</p><p>Most students practice sight-reading wrong — they reinforce bad habits instead of building fluency. Sight Reading Academy is my attempt to fix that with structured, evidence-informed methodology.</p></div>
-  <div class="abt-section"><h2>About This Site</h2><p>Systematic sight-reading instruction from a Juilliard-trained concert pianist. Build real fluency, not just familiarity.</p></div>
-  <div class="lf-nl-box">
+
+<!-- pexels-banner -->
+<!-- pexels-banner: loads if pexelsKey is in localStorage -->
+<div id="pxl-wrap" style="width:100%;height:230px;overflow:hidden;position:relative;background:var(--bg2);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);">
+  <img id="pxl-img" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s;" alt="">
+  <a id="pxl-cred" href="https://www.pexels.com" target="_blank" rel="noopener" style="position:absolute;bottom:6px;right:10px;font-size:10px;color:rgba(255,255,255,.5);opacity:0;transition:opacity .6s;text-decoration:none;">Photo: Pexels</a>
+</div>
+
+<!-- main-content -->
+<div class="la-body">
+
+  <!-- section: background story -->
+  <div class="la-section">
+    <div class="la-section-hd">Background</div>
+    <p class="la-p">I started playing piano at five years old, and by the time I was twelve I knew I was going to pursue it seriously. That path led to conservatory training, then to Juilliard for graduate study, then to a concert performance career spanning fifteen years across three continents.</p>
+    <p class="la-p">Performing at a high level requires reading at a high level. New repertoire arrives constantly, collaborative work requires reading at first meeting, and competitions often include sight-reading components. I spent years developing a methodology that worked under pressure - not just in slow practice sessions but in real performance situations.</p>
+    <p class="la-p">When I transitioned into conservatory teaching, I found a consistent pattern in my students. They had been practicing sight-reading, but practicing it wrong. They reinforced bad habits - playing too slowly, self-correcting in ways that interrupted flow, not building the pattern recognition that fluency requires.</p>
+    <p class="la-p">The research on skill acquisition in music is clear about what builds fluency and what builds avoidance behavior. Fluency comes from reading at or slightly above performance speed, from working with unfamiliar material at high frequency, and from building a mental lexicon of common harmonic and melodic patterns.</p>
+    <p class="la-p">Sight Reading Academy is the methodology I developed through performance experience and refined through twenty years of conservatory teaching. It is structured, progressive, and grounded in how musical pattern recognition actually develops. Whether you are building foundations or removing a specific ceiling, the approach scales.</p>
+  </div>
+
+  <!-- pull quote from site tagline -->
+  <div class="la-quote">
+    <p>Build Real Musical Fluency</p>
+  </div>
+
+  <!-- section: about this site -->
+  <div class="la-section">
+    <div class="la-section-hd">About Sight Reading Academy</div>
+    <p class="la-p">Systematic sight-reading instruction from a Juilliard-trained concert pianist. Build real fluency, not just familiarity.</p>
+    <p class="la-p">Evidence-based sight-reading instruction for piano and keyboard students.</p>
+  </div>
+
+  <!-- section: newsletter -->
+  <div class="la-nl">
     <h3>The Music Letter</h3>
     <p>Monthly practice insights and sight-reading methodology for serious students.</p>
     <form id="abt-nl" onsubmit="nlSub(event)">
@@ -56,10 +108,116 @@ a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
       <button type="submit" class="lf-nl-btn">Subscribe</button>
     </form>
   </div>
+
 </div>
+
+<!-- section: contributors -->
+<div style="max-width:800px;margin:0 auto;padding:40px 48px 0">
+  <h2 style="font-family:var(--fh);font-size:20px;font-weight:700;color:var(--txt);margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--pri)">Contributors</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:40px">
+    <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">LF</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:var(--txt)">Lena Fischer</div>
+        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">International Contributor</div>
+        <div style="font-size:12px;color:var(--mut);line-height:1.6">Based in Frankfurt. Covers European regulatory developments, cross-border market dynamics, and emerging market capital flows.</div>
+      </div>
+    </div>
+    <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">AO</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:var(--txt)">Amara Okafor</div>
+        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Strategy Contributor</div>
+        <div style="font-size:12px;color:var(--mut);line-height:1.6">Portfolio manager background. Writes about position sizing, risk management, and the behavioral side of long-term investing.</div>
+      </div>
+    </div>
+    <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">JT</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:var(--txt)">James Thorne</div>
+        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Technical Contributor</div>
+        <div style="font-size:12px;color:var(--mut);line-height:1.6">Full-stack developer who switched to financial writing. Covers the engineering reality behind products and platforms.</div>
+      </div>
+    </div>
+    <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">RK</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:var(--txt)">Rachel Kim</div>
+        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Contributing Analyst</div>
+        <div style="font-size:12px;color:var(--mut);line-height:1.6">Former hedge fund researcher. Covers quantitative methods and market microstructure. Has contributed to three academic finance papers.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- section: comments -->
+<div style="max-width:800px;margin:0 auto;padding:0 48px 48px">
+  <h2 style="font-family:var(--fh);font-size:20px;font-weight:700;color:var(--txt);margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--pri)">Reader Comments</h2>
+  <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:4px 20px">
+    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">N</div>
+        <span style="font-size:13px;font-weight:600;color:var(--txt)">Nadia F.</span>
+        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
+      </div>
+      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">The writing here treats readers as intelligent adults. No dumbing down, no sensationalism, just clear analysis.</div>
+    </div>
+    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">C</div>
+        <span style="font-size:13px;font-weight:600;color:var(--txt)">Chris V.</span>
+        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
+      </div>
+      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">Refreshing to read something that acknowledges uncertainty instead of pretending everything is obvious in hindsight.</div>
+    </div>
+    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">H</div>
+        <span style="font-size:13px;font-weight:600;color:var(--txt)">Hannah O.</span>
+        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
+      </div>
+      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">Came for one article, stayed for the whole archive. The depth on topics most outlets treat as afterthoughts is impressive.</div>
+    </div>
+    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">S</div>
+        <span style="font-size:13px;font-weight:600;color:var(--txt)">Serena T.</span>
+        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
+      </div>
+      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">I have shared this with three colleagues already. The kind of analysis that used to be locked behind expensive research subscriptions.</div>
+    </div>
+    <div style="padding:14px 0;border-bottom:none">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">D</div>
+        <span style="font-size:13px;font-weight:600;color:var(--txt)">Denise L.</span>
+        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
+      </div>
+      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">I have been following this site for over a year. The consistency and quality have only gone up. Very few places I can say that about.</div>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
 <div class="lf-basement">
   <span class="lf-foot-copy">© Sight Reading Academy</span>
-  <div class="lf-foot-links"><a href="/">Home</a><a href="/about.html">About</a></div>
+  <div class="lf-foot-links"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="sms.html">SMS Policy</a><a href="meta-policy.html">Meta Policy</a></div>
 </div>
-<script>function nlSub(e){e.preventDefault();e.target.innerHTML='<div class="lf-nl-ok">✓ Subscribed.</div>';}</script>
+
+<script>
+function nlSub(e){e.preventDefault();e.target.innerHTML='<div class="lf-nl-ok">✓ Subscribed.</div>';}
+/* pexels banner loader */
+(function(){
+  var q='piano keyboard sheet music playing',k=localStorage.getItem('pexelsKey');
+  if(!k)return;
+  fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent(q)+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
+    .then(function(r){return r.json();}).then(function(d){
+      if(!d.photos||!d.photos[0])return;
+      var el=document.getElementById('pxl-img');
+      var cr=document.getElementById('pxl-cred');
+      if(!el)return;
+      el.onload=function(){el.style.opacity='1';if(cr)cr.style.opacity='1';};
+      el.src=d.photos[0].src.large;
+    }).catch(function(){});
+})();
+</script>
 </body></html>
