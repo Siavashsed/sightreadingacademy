@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About Professor Laura Kim — Sight Reading Academy</title>
+<meta name="description" content="Evidence-based sight-reading instruction for piano and keyboard students.">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{  --bg:#fffef7;--bg2:#f8f7ec;--sur:#f0efe0;
+  --pri:#166534;--pri2:#15803d;
+  --txt:#141c10;--mut:#607850;--brd:#d4d8b8;
+  --fh:Georgia,serif;--fb:system-ui,sans-serif;--fm:monospace;}
+body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.75}
+a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
+.lf-top{display:flex;align-items:center;justify-content:space-between;padding:18px 52px;border-bottom:1px solid var(--brd);background:var(--bg)}
+.lf-brand{font-family:var(--fh);font-size:22px;font-weight:700;color:var(--txt);text-decoration:none}
+.lf-brand em{color:var(--pri);font-style:normal}
+.lf-nav{display:flex;gap:28px}.lf-nav a{font-size:13px;color:var(--mut);font-weight:500}.lf-nav a:hover{color:var(--txt);text-decoration:none}
+.abt-header{background:var(--bg2);border-bottom:1px solid var(--brd);padding:56px 52px;display:flex;align-items:center;gap:40px}
+.abt-avi{width:76px;height:76px;border-radius:50%;background:var(--pri);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:24px;font-weight:700;color:#fff;flex-shrink:0;border:3px solid var(--bg)}
+.abt-header h1{font-family:var(--fh);font-size:clamp(22px,3vw,36px);font-weight:700;margin-bottom:4px}
+.abt-header-role{font-size:14px;color:var(--pri);font-weight:600}
+.abt-main{max-width:700px;margin:0 auto;padding:52px 52px}
+.abt-section{margin-bottom:36px}
+.abt-section h2{font-family:var(--fh);font-size:18px;font-weight:700;color:var(--txt);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--brd)}
+.abt-section p{color:var(--mut);line-height:1.85;margin-bottom:14px}
+.lf-nl-box{background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:28px;margin-top:8px}
+.lf-nl-box h3{font-family:var(--fh);font-size:20px;font-weight:700;margin-bottom:8px}
+.lf-nl-box p{color:var(--mut);font-size:14px;margin-bottom:16px}
+.lf-nl-input{width:100%;border:1px solid var(--brd);background:var(--bg);border-radius:6px;padding:11px 14px;font-size:14px;color:var(--txt);outline:none;margin-bottom:10px;transition:border-color .2s}
+.lf-nl-input:focus{border-color:var(--pri)}.lf-nl-input::placeholder{color:var(--mut)}
+.lf-nl-btn{background:var(--pri);color:#fff;border:none;border-radius:6px;padding:11px 24px;font-size:14px;font-weight:700;cursor:pointer;transition:background .2s}
+.lf-nl-btn:hover{background:var(--pri2)}.lf-nl-ok{color:var(--pri);font-weight:600;padding:6px 0}
+.lf-basement{padding:24px 52px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-top:20px}
+.lf-foot-copy{font-size:12px;color:var(--mut)}.lf-foot-links{display:flex;gap:20px}.lf-foot-links a{font-size:12px;color:var(--mut)}
+@media(max-width:600px){.lf-top{padding:14px 16px}.abt-header{padding:36px 16px;flex-direction:column;gap:16px}.abt-main{padding:36px 16px}.lf-basement{padding:20px 16px}}
+</style>
+</head>
+<body>
+<div class="lf-top">
+  <a href="/" class="lf-brand">Sight <em>Reading Academy</em></a>
+  <nav class="lf-nav"><a href="/">Home</a><a href="/about.html">About</a></nav>
+</div>
+<div class="abt-header">
+  <div class="abt-avi">PLK</div>
+  <div><h1>Professor Laura Kim</h1><div class="abt-header-role">Juilliard-Trained Pianist & Music Educator</div></div>
+</div>
+<div class="abt-main">
+  <div class="abt-section"><h2>Background</h2><p>Twenty years of teaching piano at the conservatory level, plus a concert performance career that required reading hundreds of new scores under pressure, gave me a very specific perspective on sight-reading.</p><p>Most students practice sight-reading wrong — they reinforce bad habits instead of building fluency. Sight Reading Academy is my attempt to fix that with structured, evidence-informed methodology.</p></div>
+  <div class="abt-section"><h2>About This Site</h2><p>Systematic sight-reading instruction from a Juilliard-trained concert pianist. Build real fluency, not just familiarity.</p></div>
+  <div class="lf-nl-box">
+    <h3>The Music Letter</h3>
+    <p>Monthly practice insights and sight-reading methodology for serious students.</p>
+    <form id="abt-nl" onsubmit="nlSub(event)">
+      <input type="email" class="lf-nl-input" placeholder="your@email.com" required>
+      <button type="submit" class="lf-nl-btn">Subscribe</button>
+    </form>
+  </div>
+</div>
+<div class="lf-basement">
+  <span class="lf-foot-copy">© Sight Reading Academy</span>
+  <div class="lf-foot-links"><a href="/">Home</a><a href="/about.html">About</a></div>
+</div>
+<script>function nlSub(e){e.preventDefault();e.target.innerHTML='<div class="lf-nl-ok">✓ Subscribed.</div>';}</script>
+</body></html>
