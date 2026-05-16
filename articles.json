@@ -35,5 +35,17 @@
     "outbound_links": [
       "musicperception.ucpress.edu"
     ]
+  },
+  {
+    "title": "How to Sight-Read Chord Progressions at the Piano: A Conservatory Method That Actually Works",
+    "slug": "sight-read-chord-progressions-piano",
+    "meta_description": "Learn to sight-read chord progressions at the piano with Professor Laura Kim's proven conservatory method. Build fluency fast with structural thinking.",
+    "date": "July 10, 2024",
+    "date_iso": "2024-07-10",
+    "author": "Professor Laura Kim",
+    "image": "https://images.pexels.com/photos/12280088/pexels-photo-12280088.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "psychologyofmusic.sagepub.com"
+    ]
   }
 ]
