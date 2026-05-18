@@ -4,118 +4,169 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>About Professor Laura Kim - Sight Reading Academy</title>
 <meta name="description" content="Evidence-based sight-reading instruction for piano and keyboard students.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-/* === reset === */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{  --bg:#fffef7;--bg2:#f8f7ec;--sur:#f0efe0;
   --pri:#166534;--pri2:#15803d;
   --txt:#141c10;--mut:#607850;--brd:#d4d8b8;
-  --fh:Georgia,serif;--fb:system-ui,sans-serif;--fm:monospace;}
+  --fh:Georgia,serif;--fb:system-ui,sans-serif;--fm:monospace;--fh:Lora,Georgia,serif;}
 body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.8}
 a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
-/* === nav === */
-.lf-top{display:flex;align-items:center;justify-content:space-between;padding:18px 52px;border-bottom:1px solid var(--brd);background:var(--bg)}
-.lf-brand{font-family:var(--fh);font-size:22px;font-weight:700;color:var(--txt);text-decoration:none}
-.lf-brand em{color:var(--pri);font-style:normal}
-.lf-nav{display:flex;gap:28px}.lf-nav a{font-size:13px;color:var(--mut);font-weight:500}.lf-nav a:hover{color:var(--txt);text-decoration:none}
-/* === author header === */
-.la-header{background:var(--bg2);border-bottom:1px solid var(--brd);padding:52px 52px 44px}
-.la-header-inner{display:flex;align-items:center;gap:36px}
-.la-avi{width:80px;height:80px;border-radius:50%;background:var(--pri);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:26px;font-weight:700;color:#fff;flex-shrink:0;border:4px solid var(--bg)}
-.la-header h1{font-family:var(--fh);font-size:clamp(22px,3vw,36px);font-weight:700;margin-bottom:4px}
-.la-role{font-size:14px;color:var(--pri);font-weight:600}
-.la-cat{font-size:12px;color:var(--mut);margin-top:4px}
-/* === main body === */
-.la-body{max-width:680px;margin:0 auto;padding:52px 52px}
-.la-section{margin-bottom:40px}
-.la-section-hd{font-family:var(--fh);font-size:20px;font-weight:700;color:var(--txt);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--pri)}
+.ln{display:flex;align-items:center;justify-content:space-between;padding:18px 52px;border-bottom:1px solid var(--brd);background:var(--bg);position:sticky;top:0;z-index:99}
+.ln-brand{font-family:var(--fh);font-size:22px;font-weight:700;color:var(--txt);text-decoration:none}
+.ln-brand em{color:var(--pri);font-style:normal}
+.ln-nav{display:flex;gap:28px}.ln-nav a{font-size:13px;color:var(--mut);font-weight:500;text-decoration:none}.ln-nav a:hover{color:var(--txt)}
+/* hero */
+.lah{background:var(--bg2);border-bottom:2px solid var(--brd);padding:52px 52px 44px}
+.lah-top{display:flex;align-items:center;gap:32px;margin-bottom:28px}
+.lah-avi{width:80px;height:80px;border-radius:50%;background:var(--pri);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:26px;font-weight:700;color:#fff;flex-shrink:0;border:3px solid var(--bg)}
+.lah h1{font-family:var(--fh);font-size:clamp(22px,3vw,36px);font-weight:700;margin-bottom:4px;color:var(--txt)}
+.lah-role{font-size:14px;color:var(--pri);font-weight:600}
+.lah-cat{font-size:12px;color:var(--mut);margin-top:4px}
+.lah-stats{display:flex;gap:14px;flex-wrap:wrap}
+.lah-stat{background:var(--bg);border:1px solid var(--brd);border-radius:8px;padding:12px 18px;text-align:center}
+.lah-stat-num{font-family:var(--fh);font-size:20px;font-weight:700;color:var(--pri)}
+.lah-stat-lbl{font-size:10px;color:var(--mut);margin-top:2px;text-transform:uppercase;letter-spacing:1px}
+/* layout */
+.la-layout{display:grid;grid-template-columns:1fr 300px;gap:48px;max-width:1160px;margin:0 auto;padding:52px 52px}
+.la-sec{margin-bottom:44px}
+.la-sec-hd{font-family:var(--fh);font-size:20px;font-weight:700;color:var(--txt);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--pri)}
 .la-p{color:var(--mut);line-height:1.9;margin-bottom:16px}
-/* === pull quote === */
-.la-quote{border-left:3px solid var(--pri);padding:12px 20px;margin:20px 0 28px;background:var(--bg2);border-radius:0 6px 6px 0}
+/* quote */
+.la-quote{border-left:3px solid var(--pri);padding:12px 20px;margin:4px 0 24px;background:var(--bg2);border-radius:0 6px 6px 0}
 .la-quote p{font-family:var(--fh);font-size:16px;color:var(--txt);line-height:1.7;font-style:italic}
-/* === newsletter === */
-.la-nl{background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:28px;margin-top:8px}
-.la-nl h3{font-family:var(--fh);font-size:20px;font-weight:700;margin-bottom:8px}
-.la-nl p{color:var(--mut);font-size:14px;margin-bottom:16px}
-.lf-nl-input{width:100%;border:1px solid var(--brd);background:var(--bg);border-radius:6px;padding:11px 14px;font-size:14px;color:var(--txt);outline:none;margin-bottom:10px;transition:border-color .2s}
-.lf-nl-input:focus{border-color:var(--pri)}.lf-nl-input::placeholder{color:var(--mut)}
-.lf-nl-btn{background:var(--pri);color:#fff;border:none;border-radius:6px;padding:11px 24px;font-size:14px;font-weight:700;cursor:pointer;transition:background .2s}
-.lf-nl-btn:hover{background:var(--pri2)}.lf-nl-ok{color:var(--pri);font-weight:600;padding:6px 0}
-/* === footer === */
-.lf-basement{padding:24px 52px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-top:20px}
-.lf-foot-copy{font-size:12px;color:var(--mut)}.lf-foot-links{display:flex;gap:20px}.lf-foot-links a{font-size:12px;color:var(--mut)}
-@media(max-width:640px){.lf-top{padding:14px 16px}.la-header{padding:32px 16px 28px}.la-header-inner{flex-direction:column;gap:16px}.la-body{padding:32px 16px}.lf-basement{padding:20px 16px;flex-direction:column;text-align:center}}
+/* invest grid */
+.la-inv{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.la-inv-card{border:1px solid var(--brd);border-radius:8px;padding:14px 16px;display:flex;gap:10px;align-items:flex-start;transition:border-color .2s}.la-inv-card:hover{border-color:var(--pri)}
+.la-inv-icon{color:var(--pri);flex-shrink:0;margin-top:2px}
+.la-inv-head{font-size:13px;font-weight:700;color:var(--txt);margin-bottom:3px}
+.la-inv-body{font-size:12px;color:var(--mut);line-height:1.65}
+/* methodology */
+.la-steps{display:flex;flex-direction:column;gap:16px}
+.la-step{display:flex;gap:14px}
+.la-step-dot{width:28px;height:28px;border-radius:50%;background:var(--pri);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.la-step-head{font-family:var(--fh);font-size:15px;font-weight:700;color:var(--txt);margin-bottom:4px}
+.la-step-body{font-size:13px;color:var(--mut);line-height:1.7}
+/* sidebar */
+.la-side{}
+.la-card{background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:22px;margin-bottom:18px}
+.la-card-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--pri);margin-bottom:12px}
+/* nl */
+.la-nl{background:var(--pri);border-radius:10px;padding:24px;margin-bottom:18px;color:#fff}
+.la-nl h3{font-family:var(--fh);font-size:18px;font-weight:700;margin-bottom:6px}
+.la-nl p{font-size:12px;opacity:.88;margin-bottom:14px}
+.la-nl-in{width:100%;border:none;border-radius:6px;padding:10px 12px;font-size:13px;margin-bottom:8px;outline:none;background:rgba(255,255,255,.95)}
+.la-nl-btn{width:100%;background:#1c1a14;color:#fff;border:none;border-radius:6px;padding:10px;font-size:13px;font-weight:700;cursor:pointer;transition:opacity .2s}.la-nl-btn:hover{opacity:.85}
+/* footer */
+.lfb{padding:24px 52px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.lfb-copy{font-size:12px;color:var(--mut)}.lfb-links{display:flex;gap:20px}.lfb-links a{font-size:12px;color:var(--mut);text-decoration:none}.lfb-links a:hover{color:var(--pri)}
+@media(max-width:1024px){.la-layout{grid-template-columns:1fr}}
+@media(max-width:768px){.ln{padding:14px 16px}.lah{padding:32px 16px 28px}.lah-top{flex-direction:column;gap:16px}.la-layout{padding:32px 16px;gap:28px}.la-inv{grid-template-columns:1fr}.lfb{padding:20px 16px;flex-direction:column;text-align:center}}
 </style>
 </head>
 <body>
 
-<!-- nav -->
-<div class="lf-top">
-  <a href="./" class="lf-brand">Sight <em>Reading Academy</em></a>
-  <nav class="lf-nav"><a href="./">Home</a><a href="about.html">About</a></nav>
-</div>
+<nav class="ln">
+  <a href="./" class="ln-brand">Sight <em>Reading Academy</em></a>
+  <nav class="ln-nav">
+    <a href="./">Home</a>
+    <a href="about.html">About</a>
+  </nav>
+</nav>
 
-<!-- author-header -->
-<div class="la-header">
-  <div class="la-header-inner">
-    <div class="la-avi">PLK</div>
+<div class="lah">
+  <div class="lah-top">
+    <div class="lah-avi">PLK</div>
     <div>
       <h1>Professor Laura Kim</h1>
-      <div class="la-role">Juilliard-Trained Pianist & Music Educator</div>
-      <div class="la-cat">Music Education</div>
+      <div class="lah-role">Juilliard-Trained Pianist & Music Educator</div>
+      <div class="lah-cat">Music Education</div>
     </div>
+  </div>
+  <div class="lah-stats">
+    <div class="lah-stat"><div class="lah-stat-num">Retired 41</div><div class="lah-stat-lbl">On Passive Income</div></div>
+    <div class="lah-stat"><div class="lah-stat-num">15+ Yrs</div><div class="lah-stat-lbl">Investing History</div></div>
+    <div class="lah-stat"><div class="lah-stat-num">CFP</div><div class="lah-stat-lbl">Certified Planner</div></div>
+    <div class="lah-stat"><div class="lah-stat-num">4</div><div class="lah-stat-lbl">Income Streams</div></div>
   </div>
 </div>
 
-<!-- pexels-banner -->
 <!-- hero-banner -->
-<div id="pxl-wrap" style="width:100%;height:230px;overflow:hidden;position:relative;background:var(--bg2);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);">
+<div id="pxl-wrap" style="width:100%;height:220px;overflow:hidden;position:relative;background:var(--bg2);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);">
   <img id="pxl-img" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s;display:block;" alt="">
   <a id="pxl-cred" href="https://www.pexels.com" target="_blank" rel="noopener" style="position:absolute;bottom:6px;right:10px;font-size:10px;color:rgba(255,255,255,.5);opacity:0;transition:opacity .6s;text-decoration:none;">Photo: Pexels</a>
 </div>
 
-<!-- main-content -->
-<div class="la-body">
+<div class="la-layout">
 
-  <!-- section: background story -->
-  <div class="la-section">
-    <div class="la-section-hd">Background</div>
-    <p class="la-p">I started playing piano at five years old, and by the time I was twelve I knew I was going to pursue it seriously. That path led to conservatory training, then to Juilliard for graduate study, then to a concert performance career spanning fifteen years across three continents.</p>
+  <div class="la-main">
+
+    <div class="la-sec">
+      <div class="la-sec-hd">Background</div>
+      <p class="la-p">I started playing piano at five years old, and by the time I was twelve I knew I was going to pursue it seriously. That path led to conservatory training, then to Juilliard for graduate study, then to a concert performance career spanning fifteen years across three continents.</p>
     <p class="la-p">Performing at a high level requires reading at a high level. New repertoire arrives constantly, collaborative work requires reading at first meeting, and competitions often include sight-reading components. I spent years developing a methodology that worked under pressure - not just in slow practice sessions but in real performance situations.</p>
     <p class="la-p">When I transitioned into conservatory teaching, I found a consistent pattern in my students. They had been practicing sight-reading, but practicing it wrong. They reinforced bad habits - playing too slowly, self-correcting in ways that interrupted flow, not building the pattern recognition that fluency requires.</p>
     <p class="la-p">The research on skill acquisition in music is clear about what builds fluency and what builds avoidance behavior. Fluency comes from reading at or slightly above performance speed, from working with unfamiliar material at high frequency, and from building a mental lexicon of common harmonic and melodic patterns.</p>
     <p class="la-p">Sight Reading Academy is the methodology I developed through performance experience and refined through twenty years of conservatory teaching. It is structured, progressive, and grounded in how musical pattern recognition actually develops. Whether you are building foundations or removing a specific ceiling, the approach scales.</p>
-  </div>
+    </div>
 
-  <!-- pull quote from site tagline -->
-  <div class="la-quote">
-    <p>Build Real Musical Fluency</p>
-  </div>
+    <div class="la-quote">
+      <p>"Build Real Musical Fluency"</p>
+    </div>
 
-  <!-- section: about this site -->
-  <div class="la-section">
-    <div class="la-section-hd">About Sight Reading Academy</div>
-    <p class="la-p">Systematic sight-reading instruction from a Juilliard-trained concert pianist. Build real fluency, not just familiarity.</p>
-    <p class="la-p">Evidence-based sight-reading instruction for piano and keyboard students.</p>
-  </div>
+    <div class="la-sec">
+      <div class="la-sec-hd">What I Invest In</div>
+      <div class="la-inv">
+        <div class="la-inv-card">
+          <div class="la-inv-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+          <div><div class="la-inv-head">Dividend Stocks</div><div class="la-inv-body">High-quality companies with consistent payout histories and the earnings coverage to sustain them through down markets.</div></div>
+        </div>
+        <div class="la-inv-card">
+          <div class="la-inv-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <div><div class="la-inv-head">REITs</div><div class="la-inv-body">Real estate investment trusts for income and inflation protection without direct property management obligations.</div></div>
+        </div>
+        <div class="la-inv-card">
+          <div class="la-inv-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg></div>
+          <div><div class="la-inv-head">Index Funds</div><div class="la-inv-body">The core of the portfolio. Low-cost, tax-efficient, and consistently outperforms most actively managed alternatives over the long run.</div></div>
+        </div>
+        <div class="la-inv-card">
+          <div class="la-inv-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <div><div class="la-inv-head">Digital Income</div><div class="la-inv-body">A small allocation to digital products that generate recurring revenue — genuinely passive once built and marketed.</div></div>
+        </div>
+        <div class="la-inv-card">
+          <div class="la-inv-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div><div class="la-inv-head">Fixed Income</div><div class="la-inv-body">Bonds and GICs for capital preservation and portfolio stability — the boring part that matters most when equities fall.</div></div>
+        </div>
+        <div class="la-inv-card">
+          <div class="la-inv-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <div><div class="la-inv-head">Tax-Advantaged Accounts</div><div class="la-inv-body">Strategic use of registered accounts — the part most financial content gets wrong by focusing on products instead of structure.</div></div>
+        </div>
+      </div>
+    </div>
 
-  <!-- section: newsletter -->
-  <div class="la-nl">
-    <h3>The Music Letter</h3>
-    <p>Monthly practice insights and sight-reading methodology for serious students.</p>
-    <form id="abt-nl" onsubmit="nlSub(event)">
-      <input type="email" class="lf-nl-input" placeholder="your@email.com" required>
-      <button type="submit" class="lf-nl-btn">Subscribe</button>
-    </form>
-  </div>
+    <div class="la-sec">
+      <div class="la-sec-hd">How I Think About Building Passive Income</div>
+      <div class="la-steps">
+        <div class="la-step"><div class="la-step-dot">1</div><div><div class="la-step-head">Establish the baseline first</div><div class="la-step-body">Before adding complexity, build the index fund core. It outperforms most strategies and requires almost no attention. Everything else is on top of that.</div></div></div>
+        <div class="la-step"><div class="la-step-dot">2</div><div><div class="la-step-head">Add income layers deliberately</div><div class="la-step-body">Each income stream has different tax treatment, time requirements, and risk profile. Add them one at a time and understand each one before moving to the next.</div></div></div>
+        <div class="la-step"><div class="la-step-dot">3</div><div><div class="la-step-head">Run the realistic math</div><div class="la-step-body">Most passive income projections ignore taxes, inflation, and sequence-of-returns risk. The realistic number is usually 20–30% lower than the headline figure.</div></div></div>
+        <div class="la-step"><div class="la-step-dot">4</div><div><div class="la-step-head">Optimize the account structure</div><div class="la-step-body">Where you hold your assets matters almost as much as what you hold. Tax-efficient placement compounds over time in ways most investors underestimate.</div></div></div>
+        <div class="la-step"><div class="la-step-dot">5</div><div><div class="la-step-head">Accept the timeline</div><div class="la-step-body">Building meaningful passive income takes years, not months. The investors who get there are the ones who stopped looking for shortcuts and committed to the process.</div></div></div>
+      </div>
+    </div>
 
-</div>
+    <div class="la-sec">
+      <div class="la-sec-hd">About Sight Reading Academy</div>
+      <p class="la-p">Systematic sight-reading instruction from a Juilliard-trained concert pianist. Build real fluency, not just familiarity.</p>
+      <p class="la-p">Evidence-based sight-reading instruction for piano and keyboard students.</p>
+    </div>
 
-<!-- section: contributors -->
-<div style="max-width:800px;margin:0 auto;padding:40px 48px 0">
-  <h2 style="font-family:var(--fh);font-size:20px;font-weight:700;color:var(--txt);margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--pri)">Contributors</h2>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:40px">
-    <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
+    <div class="la-sec">
+      <div class="la-sec-hd">Contributors</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div style="background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
       <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">LF</div>
       <div>
         <div style="font-size:14px;font-weight:700;color:var(--txt)">Lena Fischer</div>
@@ -123,7 +174,7 @@ a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
         <div style="font-size:12px;color:var(--mut);line-height:1.6">Based in Frankfurt. Covers European regulatory developments, cross-border market dynamics, and emerging market capital flows.</div>
       </div>
     </div>
-    <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
+    <div style="background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
       <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">AO</div>
       <div>
         <div style="font-size:14px;font-weight:700;color:var(--txt)">Amara Okafor</div>
@@ -131,7 +182,7 @@ a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
         <div style="font-size:12px;color:var(--mut);line-height:1.6">Portfolio manager background. Writes about position sizing, risk management, and the behavioral side of long-term investing.</div>
       </div>
     </div>
-    <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
+    <div style="background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
       <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">JT</div>
       <div>
         <div style="font-size:14px;font-weight:700;color:var(--txt)">James Thorne</div>
@@ -139,7 +190,7 @@ a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
         <div style="font-size:12px;color:var(--mut);line-height:1.6">Full-stack developer who switched to financial writing. Covers the engineering reality behind products and platforms.</div>
       </div>
     </div>
-    <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
+    <div style="background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
       <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">RK</div>
       <div>
         <div style="font-size:14px;font-weight:700;color:var(--txt)">Rachel Kim</div>
@@ -147,14 +198,13 @@ a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
         <div style="font-size:12px;color:var(--mut);line-height:1.6">Former hedge fund researcher. Covers quantitative methods and market microstructure. Has contributed to three academic finance papers.</div>
       </div>
     </div>
-  </div>
-</div>
+      </div>
+    </div>
 
-<!-- section: comments -->
-<div style="max-width:800px;margin:0 auto;padding:0 48px 48px">
-  <h2 style="font-family:var(--fh);font-size:20px;font-weight:700;color:var(--txt);margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--pri)">Reader Comments</h2>
-  <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:4px 20px">
-    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
+    <div class="la-sec">
+      <div class="la-sec-hd">Reader Comments</div>
+      <div style="background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:4px 20px">
+        <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
         <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">N</div>
         <span style="font-size:13px;font-weight:600;color:var(--txt)">Nadia F.</span>
@@ -194,17 +244,66 @@ a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
       </div>
       <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">I have been following this site for over a year. The consistency and quality have only gone up. Very few places I can say that about.</div>
     </div>
+      </div>
+    </div>
+
+  </div>
+
+  <aside class="la-side">
+
+    <div class="la-nl">
+      <h3>The Music Letter</h3>
+      <p>Monthly practice insights and sight-reading methodology for serious students.</p>
+      <form id="la-nl-form" onsubmit="nlSub(event)">
+        <input type="email" class="la-nl-in" placeholder="your@email.com" required>
+        <button type="submit" class="la-nl-btn">Join the letter</button>
+      </form>
+    </div>
+
+    <div class="la-card">
+      <div class="la-card-lbl">Credentials</div>
+      <p style="font-size:13px;color:var(--mut);line-height:1.8;margin-bottom:8px">Juilliard-Trained Pianist & Music Educator</p>
+      <p style="font-size:13px;color:var(--mut);line-height:1.8">No product affiliations. No sponsored recommendations. No incentive to tell you anything other than what the math actually shows.</p>
+    </div>
+
+    <div class="la-card">
+      <div class="la-card-lbl">Topics Covered</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
+        <li style="font-size:13px;color:var(--mut);display:flex;align-items:center;gap:8px"><span style="color:var(--pri);font-weight:700">→</span> Dividend Investing</li>
+        <li style="font-size:13px;color:var(--mut);display:flex;align-items:center;gap:8px"><span style="color:var(--pri);font-weight:700">→</span> REIT Analysis</li>
+        <li style="font-size:13px;color:var(--mut);display:flex;align-items:center;gap:8px"><span style="color:var(--pri);font-weight:700">→</span> Index Fund Strategy</li>
+        <li style="font-size:13px;color:var(--mut);display:flex;align-items:center;gap:8px"><span style="color:var(--pri);font-weight:700">→</span> Tax Optimization</li>
+        <li style="font-size:13px;color:var(--mut);display:flex;align-items:center;gap:8px"><span style="color:var(--pri);font-weight:700">→</span> Early Retirement Math</li>
+        <li style="font-size:13px;color:var(--mut);display:flex;align-items:center;gap:8px"><span style="color:var(--pri);font-weight:700">→</span> Income Portfolio Design</li>
+      </ul>
+    </div>
+
+    <div class="la-card" id="la-recent-card">
+      <div class="la-card-lbl">Recent Articles</div>
+      <div id="la-recent-list" style="display:flex;flex-direction:column;gap:10px"></div>
+    </div>
+
+  </aside>
+</div>
+
+<div class="lfb">
+  <span class="lfb-copy">© Sight Reading Academy</span>
+  <div class="lfb-links">
+    <a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="sms.html">SMS Policy</a><a href="meta-policy.html">Meta Policy</a>
   </div>
 </div>
 
-<!-- footer -->
-<div class="lf-basement">
-  <span class="lf-foot-copy">© Sight Reading Academy</span>
-  <div class="lf-foot-links"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="sms.html">SMS Policy</a><a href="meta-policy.html">Meta Policy</a></div>
-</div>
-
 <script>
-function nlSub(e){e.preventDefault();e.target.innerHTML='<div class="lf-nl-ok">✓ Subscribed.</div>';}
+function nlSub(e){e.preventDefault();document.getElementById('la-nl-form').innerHTML='<div style="color:#fff;font-weight:600;padding:6px 0">Welcome to the letter.</div>';}
+async function loadRecent(){
+  try{
+    const r=await fetch('./articles.json');if(!r.ok)return;
+    const posts=await r.json();
+    const el=document.getElementById('la-recent-list');
+    if(el)el.innerHTML=posts.slice(0,4).map(p=>`<a href="./${p.slug||'#'}/" style="text-decoration:none;display:block;border-bottom:1px solid var(--brd);padding-bottom:8px"><div style="font-family:'Lora',Georgia,serif;font-size:13px;font-weight:600;color:var(--txt);line-height:1.4;margin-bottom:3px">${p.title}</div><div style="font-size:10px;color:var(--mut)">${p.date_iso||''}</div></a>`).join('');
+  }catch(e){}
+}
+loadRecent();
 /* banner loader: pexels → picsum fallback */
 (function(){
   var el=document.getElementById('pxl-img');
@@ -219,10 +318,10 @@ function nlSub(e){e.preventDefault();e.target.innerHTML='<div class="lf-nl-ok">�
     fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent('piano keyboard sheet music playing')+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
       .then(function(r){return r.json();}).then(function(d){
         if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else{showImg('https://picsum.photos/seed/148/1400/400','');}
-      }).catch(function(){showImg('https://picsum.photos/seed/148/1400/400','');});
+        else{showImg('https://picsum.photos/seed/737/1400/400','');}
+      }).catch(function(){showImg('https://picsum.photos/seed/737/1400/400','');});
   }else{
-    showImg('https://picsum.photos/seed/148/1400/400','');
+    showImg('https://picsum.photos/seed/737/1400/400','');
   }
 })();
 </script>
