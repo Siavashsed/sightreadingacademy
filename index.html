@@ -214,7 +214,7 @@ loadPosts();
   if(!el)return;
   var SOURCES=['pexels', 'unsplash'];
   var Q=encodeURIComponent('piano keyboard sheet music playing');
-  var FALLBACK='https://picsum.photos/seed/707/1400/400';
+  var FALLBACK='https://picsum.photos/seed/448/1400/400';
   function showImg(src,cred){
     el.onload=function(){el.style.opacity='1';if(cred&&cr){cr.textContent=cred;cr.style.opacity='1';}};
     el.src=src;
