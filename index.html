@@ -57,6 +57,21 @@ a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
 .ls-post-foot{padding:0 22px 18px;display:flex;justify-content:space-between;align-items:center}
 .ls-post-date{font-size:11px;color:var(--mut)}
 .ls-post-link{font-size:13px;font-weight:600;color:var(--pri)}
+/* value props */
+.lvp{padding:40px 52px;border-bottom:1px solid var(--brd);background:var(--bg2)}
+.lvp-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.lvp-card{background:var(--bg);border:1px solid var(--brd);border-radius:10px;padding:24px}
+.lvp-icon{width:40px;height:40px;border-radius:8px;background:var(--pri)1a;display:flex;align-items:center;justify-content:center;color:var(--pri);margin-bottom:12px}
+.lvp-title{font-family:var(--fh);font-size:16px;font-weight:700;color:var(--txt);margin-bottom:6px}
+.lvp-desc{font-size:13px;color:var(--mut);line-height:1.75}
+/* author note */
+.lan{padding:40px 52px;border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);background:var(--bg2)}
+.lan-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:80px 1fr;gap:24px;align-items:center}
+.lan-av{width:72px;height:72px;border-radius:50%;background:var(--pri);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:22px;font-weight:700;color:#fff;flex-shrink:0}
+.lan-name{font-family:var(--fh);font-size:18px;font-weight:700;color:var(--txt);margin-bottom:2px}
+.lan-role{font-size:12px;color:var(--pri);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.lan-bio{font-size:14px;color:var(--mut);line-height:1.75}
+.lan-link{display:inline-block;margin-top:10px;font-size:13px;font-weight:600;color:var(--pri);border-bottom:1px solid var(--pri);text-decoration:none}
 /* newsletter */
 .lnl{background:var(--pri);padding:72px 52px;display:flex;gap:64px;align-items:center}
 .lnl-text{flex:1}
@@ -71,7 +86,7 @@ a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
 .lfb-copy{font-size:12px;color:var(--mut)}
 .lfb-links{display:flex;gap:20px}.lfb-links a{font-size:12px;color:var(--mut);text-decoration:none}.lfb-links a:hover{color:var(--pri)}
 @media(max-width:1024px){.lf-feat-card{grid-template-columns:1fr}}
-@media(max-width:768px){.ln{padding:14px 16px}.lh{padding:40px 16px 32px}.lp{padding:0 16px}.lf-feat{padding:36px 16px 0}.ls{padding:32px 16px 40px}.lnl{flex-direction:column;padding:52px 16px;gap:32px}.lnl-form-wrap{width:100%}.lfb{padding:20px 16px;flex-direction:column;text-align:center}}
+@media(max-width:768px){.ln{padding:14px 16px}.lh{padding:40px 16px 32px}.lp{padding:0 16px}.lf-feat{padding:36px 16px 0}.ls{padding:32px 16px 40px}.lnl{flex-direction:column;padding:52px 16px;gap:32px}.lnl-form-wrap{width:100%}.lfb{padding:20px 16px;flex-direction:column;text-align:center}.lvp{padding:32px 16px}.lvp-inner{grid-template-columns:1fr}.lan{padding:32px 16px}.lan-inner{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -106,6 +121,26 @@ a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
   </div>
 </div>
 
+<div class="lvp">
+  <div class="lvp-inner">
+    <div class="lvp-card">
+      <div class="lvp-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+      <div class="lvp-title">Real Numbers, Real Timelines</div>
+      <div class="lvp-desc">Every strategy includes honest math: how long it takes, what capital you need, and what taxes look like at each stage.</div>
+    </div>
+    <div class="lvp-card">
+      <div class="lvp-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+      <div class="lvp-title">Multiple Income Streams</div>
+      <div class="lvp-desc">Dividends, REITs, index funds, rental income, and digital products — learn how to layer income streams that actually stay passive.</div>
+    </div>
+    <div class="lvp-card">
+      <div class="lvp-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <div class="lvp-title">CFP-Verified Guidance</div>
+      <div class="lvp-desc">Written by a certified financial planner who retired at 41. Not theory — lived experience with the math to back it up.</div>
+    </div>
+  </div>
+</div>
+
 <!-- hero-banner -->
 <div id="pxl-wrap" style="width:100%;height:220px;overflow:hidden;position:relative;background:var(--bg2);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);">
   <img id="pxl-img" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s;display:block;" alt="">
@@ -131,10 +166,22 @@ a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
   <div class="ls-grid" id="ls-grid"></div>
 </div>
 
+<div class="lan">
+  <div class="lan-inner">
+    <div class="lan-av">PL</div>
+    <div>
+      <div class="lan-name">Professor Laura Kim</div>
+      <div class="lan-role">Juilliard-Trained Pianist & Music Educator</div>
+      <div class="lan-bio">Twenty years of teaching piano at the conservatory level, plus a concert performance career that required reading hundreds of new scores under pressure, gave me a very specific perspective on sight-reading.</div>
+      <a href="about.html" class="lan-link">Read full story and methodology</a>
+    </div>
+  </div>
+</div>
+
 <div class="lnl">
   <div class="lnl-text">
     <h2>The Music Letter</h2>
-    <p>Written by Professor Laura Kim, juilliard-trained pianist & music educator. The realistic version of passive income — math, timelines, and taxes included.</p>
+    <p>Written by Professor Laura Kim, juilliard-trained pianist & music educator. The realistic version of passive income: math, timelines, and taxes included.</p>
   </div>
   <div class="lnl-form-wrap">
     <div class="lnl-form-sub">Monthly practice insights and sight-reading methodology for serious students.</div>
@@ -153,6 +200,7 @@ a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
 </div>
 
 <script>
+function clean(t){return (t||'').replace(/—/g,'...').replace(/–/g,'-').trim();}
 async function loadPosts(){
   try{
     const r=await fetch('./articles.json');if(!r.ok)throw 0;
@@ -161,15 +209,17 @@ async function loadPosts(){
     const fl=document.getElementById('lf-feat-link');
     const fi=document.getElementById('lf-feat-img');
     if(fl)fl.href='./'+(feat.slug||'#')+'/';
-    if(fi&&feat.image){fi.src=feat.image;fi.alt=feat.title;}
+    if(fi&&feat.image){fi.src=feat.image;fi.alt=clean(feat.title);}
     const ft=document.getElementById('lf-feat-title');
     const fd=document.getElementById('lf-feat-desc');
     const fm=document.getElementById('lf-feat-meta');
-    if(ft)ft.textContent=feat.title;
-    if(fd)fd.textContent=(feat.meta_description||'').slice(0,140)+'...';
+    if(ft)ft.textContent=clean(feat.title);
+    if(fd)fd.textContent=clean(feat.meta_description).slice(0,160);
     if(fm)fm.textContent=feat.date_iso||'';
     const grid=document.getElementById('ls-grid');
-    if(grid)grid.innerHTML=posts.map(p=>`<a href="./${p.slug||'#'}/" class="ls-post">${p.image?`<img class="ls-post-img" src="${p.image}" alt="${p.title}" loading="lazy">`:`<div class="ls-post-img"></div>`}<div class="ls-post-body"><div class="ls-post-label">Music Education</div><div class="ls-post-title">${p.title}</div><div class="ls-post-desc">${(p.meta_description||'').slice(0,120)}...</div></div><div class="ls-post-foot"><span class="ls-post-date">${p.date_iso||''}</span><span class="ls-post-link">Read →</span></div></a>`).join('');
+    if(grid)grid.innerHTML=posts.map(function(p){
+      return '<a href="./'+p.slug+'/" class="ls-post">'+(p.image?'<img class="ls-post-img" src="'+p.image+'" alt="'+clean(p.title)+'" loading="lazy">':'<div class="ls-post-img" style="background:var(--bg2)"></div>')+'<div class="ls-post-body"><div class="ls-post-label">Music Education</div><div class="ls-post-title">'+clean(p.title)+'</div><div class="ls-post-desc">'+clean(p.meta_description).slice(0,130)+'</div></div><div class="ls-post-foot"><span class="ls-post-date">'+(p.date_iso||'')+'</span><span class="ls-post-link">Read article</span></div></a>';
+    }).join('');
   }catch(e){
     const grid=document.getElementById('ls-grid');
     if(grid)grid.innerHTML='<div class="ls-post"><div class="ls-post-body"><div class="ls-post-label">Coming Soon</div><div class="ls-post-title">Articles publishing soon</div><div class="ls-post-desc">Check back shortly.</div></div></div>';
@@ -191,10 +241,10 @@ loadPosts();
     fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent('piano keyboard sheet music playing')+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
       .then(function(r){return r.json();}).then(function(d){
         if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else{showImg('https://picsum.photos/seed/737/1400/400','');}
-      }).catch(function(){showImg('https://picsum.photos/seed/737/1400/400','');});
+        else{showImg('https://picsum.photos/seed/617/1400/400','');}
+      }).catch(function(){showImg('https://picsum.photos/seed/617/1400/400','');});
   }else{
-    showImg('https://picsum.photos/seed/737/1400/400','');
+    showImg('https://picsum.photos/seed/617/1400/400','');
   }
 })();
 </script>
