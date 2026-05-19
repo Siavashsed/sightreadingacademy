@@ -1,0 +1,52 @@
+[
+  {
+    "id": "c1245",
+    "name": "Marcus T.",
+    "initials": "MT",
+    "color": "#ec4899",
+    "date_iso": "2026-05-19",
+    "date_display": "May 19, 2026",
+    "text": "Finally someone said it! I've been teaching my students to sing intervals first for years and it makes such a difference. They actually understand what a third sounds like instead of just memorizing numbers.",
+    "likes": 8
+  },
+  {
+    "id": "c2551",
+    "name": "Rebecca K.",
+    "initials": "RK",
+    "color": "#f59e0b",
+    "date_iso": "2026-05-22",
+    "date_display": "May 22, 2026",
+    "text": "This is interesting but how do you manage this with larger classes? I teach 30+ students and getting everyone to sing intervals accurately before naming them seems time-consuming.",
+    "likes": 5
+  },
+  {
+    "id": "c3398",
+    "name": "David P.",
+    "initials": "DP",
+    "color": "#3ecf8e",
+    "date_iso": "2026-05-25",
+    "date_display": "May 25, 2026",
+    "text": "I tried this approach last semester and my students' ear training improved noticeably. Highly recommend giving it a shot even if it feels slower at first.",
+    "likes": 11
+  },
+  {
+    "id": "c4544",
+    "name": "Sophie M.",
+    "initials": "SM",
+    "color": "#f97316",
+    "date_iso": "2026-05-29",
+    "date_display": "May 29, 2026",
+    "text": "Does anyone else teach singing intervals using hand signs first? I find that combining kinesthetic, aural, and then visual/naming creates the strongest connections.",
+    "likes": 6
+  },
+  {
+    "id": "c5885",
+    "name": "James H.",
+    "initials": "JH",
+    "color": "#6366f1",
+    "date_iso": "2026-06-02",
+    "date_display": "Jun 2, 2026",
+    "text": "Skipping singing is definitely a mistake I made early in my teaching. My college theory students struggle with intervals specifically because they never developed that intuitive sound memory.",
+    "likes": 9
+  }
+]
