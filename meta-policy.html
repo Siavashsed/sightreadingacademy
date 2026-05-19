@@ -371,17 +371,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 3
 </footer>
 
 <script>
-const PLACEHOLDER_ARTS=[
-  {title:"Why You Can't Sight-Read Fast: The Fixation Problem",slug:"sight-reading-fixation",cat:"sight-reading",excerpt:"Your eyes are moving note by note instead of phrase by phrase. This is fixable, and it's the single biggest lever for improvement.",mins:8},
-  {title:"The Interval Recognition Drill That Changes Everything",slug:"interval-recognition-drill",cat:"sight-reading",excerpt:"When you can identify a minor sixth instantly, sight-reading stops being decoding and starts being reading.",mins:6},
-  {title:"Compound Meter: A Clear Method for Reading 6/8, 9/8, and 12/8",slug:"compound-meter-guide",cat:"rhythm",excerpt:"Most musicians count compound meter incorrectly, which causes hesitation at tempo. Here's the fix.",mins:9},
-  {title:"How to Develop Relative Pitch Without Perfect Pitch",slug:"relative-pitch-development",cat:"ear-training",excerpt:"Relative pitch is trainable. A 12-week daily ear training protocol that builds genuine interval recognition.",mins:10},
-  {title:"Roman Numeral Analysis: Why It Makes You a Better Sight-Reader",slug:"roman-numeral-analysis",cat:"theory",excerpt:"Seeing harmony in context, not isolated notes, is how fluent sight-readers actually process a score.",mins:7},
-  {title:"The 15-Minute Daily Sight-Reading Practice Protocol",slug:"daily-sight-reading-protocol",cat:"practice",excerpt:"How to structure your practice time so you improve every single day, not just on good days.",mins:6},
-  {title:"Ledger Lines: A Visual Recognition System That Finally Sticks",slug:"ledger-lines-system",cat:"sight-reading",excerpt:"Stop counting lines. Start recognizing shapes. The visual pattern method for ledger line fluency.",mins:5},
-  {title:"How to Sight-Read Piano: Hands Together From Day One",slug:"piano-hands-together",cat:"piano",excerpt:"The common advice to practice hands separately creates a coordination problem. This approach avoids it.",mins:8},
-];
-
 let arts=[];
 let activeFilter="all";
 
@@ -390,7 +379,12 @@ function catLabel(c){return (c||"").replace(/-/g," ").replace(/\b\w/g,m=>m.toUpp
 function renderHero(items){
   const el=document.getElementById("heroList");
   if(!el)return;
-  el.innerHTML=items.slice(0,5).map((a,i)=>`
+  const valid=items.filter(a=>a&&a.slug);
+  if(!valid.length){
+    el.innerHTML='<div class="hc-item" style="opacity:.7"><span><div class="hc-title">New lessons coming soon</div></span></div>';
+    return;
+  }
+  el.innerHTML=valid.slice(0,5).map((a,i)=>`
     <a href="./${a.slug}/" class="hc-item">
       <span class="hc-num">${i+1}</span>
       <span><div class="hc-cat">${catLabel(a.cat)}</div><div class="hc-title">${a.title}</div></span>
@@ -400,9 +394,10 @@ function renderHero(items){
 function renderLessons(){
   const g=document.getElementById("lessonGrid");
   if(!g)return;
-  const filtered=activeFilter==="all"?arts:arts.filter(a=>a.cat===activeFilter);
+  const valid=arts.filter(a=>a&&a.slug);
+  const filtered=activeFilter==="all"?valid:valid.filter(a=>a.cat===activeFilter);
   const items=filtered.slice(0,6);
-  if(!items.length){g.innerHTML='<div class="feed-empty">No lessons in this discipline yet. Check back soon.</div>';return;}
+  if(!items.length){g.innerHTML='<div class="feed-empty">New lessons coming soon.</div>';return;}
   g.innerHTML=items.map(a=>`
     <a href="./${a.slug}/" class="art-card">
       <div class="art-top"><span class="art-cat">${catLabel(a.cat)}</span><span class="art-mins">${a.mins} min read</span></div>
@@ -427,9 +422,9 @@ async function load(){
   if(!document.getElementById("lessonGrid"))return;
   try{
     const r=await fetch("./articles.json");
-    if(r.ok){const d=await r.json();arts=Array.isArray(d)&&d.length?d:PLACEHOLDER_ARTS;}
-    else{arts=PLACEHOLDER_ARTS;}
-  }catch(e){arts=PLACEHOLDER_ARTS;}
+    if(r.ok){const d=await r.json();arts=Array.isArray(d)?d:[];}
+    else{arts=[];}
+  }catch(e){arts=[];}
   renderHero(arts);
   renderLessons();
 }
