@@ -1156,6 +1156,234 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 3
 }
 /* page */
 :root{
+  --bg:#11100d;
+  --bg2:#181712;
+  --bg3:#211f18;
+  --panel:#1d1b15;
+  --gold:#c9a96e;
+  --gold2:#b8944a;
+  --gold-soft:#e3cda0;
+  --burgundy:#7d2b3a;
+  --text:#efece2;
+  --text2:#cbc7b8;
+  --muted:#8d897c;
+  --border:#2c2a22;
+  --border2:#3a3729;
+  --serif:'Cormorant Garamond',serif;
+  --sans:'Inter',system-ui,sans-serif;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.16,.7,.3,1),transform .8s cubic-bezier(.16,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* NAV */
+.site-nav{background:rgba(17,16,13,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:200}
+.nav-in{max-width:1180px;margin:0 auto;padding:0 32px;display:flex;align-items:center;height:72px;gap:40px}
+.nav-logo{display:flex;align-items:center;gap:11px;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--text);letter-spacing:.01em}
+.nav-logo .clef{color:var(--gold);font-size:30px;line-height:0}
+.nav-logo em{color:var(--gold);font-style:italic;font-weight:600}
+.nav-links{display:flex;gap:4px;margin-left:auto}
+.nav-links a{font-family:var(--sans);font-size:12.5px;font-weight:500;letter-spacing:.03em;padding:8px 14px;color:var(--text2);border-radius:6px;transition:all .18s}
+.nav-links a:hover{color:var(--text);background:var(--bg3)}
+.nav-cta{margin-left:8px;background:var(--gold);color:#1a1813;font-family:var(--sans);font-size:12.5px;font-weight:600;letter-spacing:.02em;padding:10px 20px;border-radius:7px;transition:all .18s}
+.nav-cta:hover{background:var(--gold-soft);transform:translateY(-1px)}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--border);
+  background:radial-gradient(900px 460px at 78% 0%,rgba(201,169,110,.12),transparent 70%),var(--bg)}
+.hero-staff{position:absolute;inset:0;pointer-events:none;opacity:.5}
+.hero-staff span{position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--border2) 30%,var(--border2) 70%,transparent)}
+.hero-in{position:relative;max-width:1180px;margin:0 auto;padding:96px 32px;display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:center}
+.hero-kicker{display:inline-flex;align-items:center;gap:9px;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:26px}
+.hero-kicker::before{content:"";width:30px;height:1px;background:var(--gold)}
+.hero-h1{font-family:var(--serif);font-size:clamp(46px,6vw,80px);font-weight:600;line-height:1.03;letter-spacing:.005em;color:var(--text);margin-bottom:22px}
+.hero-h1 em{display:block;color:var(--gold);font-style:italic;font-weight:500}
+.hero-desc{font-size:17.5px;color:var(--text2);max-width:480px;margin-bottom:34px;line-height:1.75}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+.btn-gold{background:var(--gold);color:#1a1813;font-family:var(--sans);font-size:13.5px;font-weight:600;letter-spacing:.02em;padding:15px 28px;border-radius:8px;transition:all .18s}
+.btn-gold:hover{background:var(--gold-soft);transform:translateY(-2px);box-shadow:0 12px 30px -12px rgba(201,169,110,.5)}
+.btn-outline{border:1px solid var(--border2);color:var(--text);font-family:var(--sans);font-size:13.5px;font-weight:500;letter-spacing:.02em;padding:14px 27px;border-radius:8px;transition:all .18s}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.hero-tags{display:flex;gap:20px;flex-wrap:wrap}
+.hero-tag{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.hero-tag .dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+
+/* hero card */
+.hero-card{position:relative;background:linear-gradient(165deg,var(--bg2),var(--bg));border:1px solid var(--border2);border-radius:16px;padding:30px;box-shadow:0 30px 70px -30px rgba(0,0,0,.7)}
+.hero-card::before{content:"\1D11E";position:absolute;top:14px;right:22px;font-family:var(--serif);font-size:96px;color:var(--gold);opacity:.08;line-height:1}
+.hc-label{font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+.hc-list{display:flex;flex-direction:column}
+.hc-item{display:grid;grid-template-columns:34px 1fr;gap:14px;align-items:start;padding:14px 0;border-bottom:1px solid var(--border)}
+.hc-item:last-child{border-bottom:none;padding-bottom:0}
+.hc-item:first-child{padding-top:0}
+.hc-num{font-family:var(--serif);font-size:26px;font-weight:600;color:var(--gold);line-height:1}
+.hc-cat{font-size:9.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.hc-title{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--text);line-height:1.32;transition:color .18s}
+.hc-item:hover .hc-title{color:var(--gold)}
+
+/* TRUST STRIP */
+.trust{border-bottom:1px solid var(--border);background:var(--bg2)}
+.trust-in{max-width:1180px;margin:0 auto;padding:26px 32px;display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap}
+.trust-label{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.trust-item{font-family:var(--serif);font-size:18px;font-style:italic;color:var(--text2)}
+.trust-item b{color:var(--gold);font-style:normal;font-weight:600}
+
+/* SECTION SHELL */
+.section{padding:96px 0}
+.sec-head{max-width:680px;margin-bottom:52px}
+.sec-head.center{margin:0 auto 56px;text-align:center}
+.sec-label{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.sec-label::before{content:"";width:22px;height:1px;background:var(--gold)}
+.sec-head.center .sec-label::after{content:"";width:22px;height:1px;background:var(--gold)}
+.sec-title{font-family:var(--serif);font-size:clamp(32px,4.2vw,48px);font-weight:600;line-height:1.1;letter-spacing:.005em;color:var(--text)}
+.sec-title em{color:var(--gold);font-style:italic}
+.sec-sub{font-size:16.5px;color:var(--text2);margin-top:16px;line-height:1.7}
+
+/* STORY */
+.story{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.story-in{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.story-body p{font-size:16.5px;color:var(--text2);line-height:1.85;margin-bottom:18px}
+.story-body p:last-child{margin-bottom:0}
+.story-body .lead{font-family:var(--serif);font-size:24px;font-style:italic;color:var(--text);line-height:1.5;margin-bottom:24px}
+.story-panel{background:var(--panel);border:1px solid var(--border2);border-radius:16px;padding:40px}
+.story-step{display:grid;grid-template-columns:54px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--border)}
+.story-step:first-child{padding-top:0}
+.story-step:last-child{border-bottom:none;padding-bottom:0}
+.story-step-num{font-family:var(--serif);font-size:38px;font-weight:600;color:var(--gold);line-height:.9}
+.story-step h4{font-family:var(--serif);font-size:21px;font-weight:600;color:var(--text);margin-bottom:5px}
+.story-step p{font-size:14.5px;color:var(--muted);line-height:1.65}
+
+/* VALUE CARDS */
+.vp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.vp-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:34px 30px;transition:all .22s}
+.vp-card:hover{border-color:var(--border2);transform:translateY(-4px);background:var(--bg3)}
+.vp-icon{font-family:var(--serif);font-size:34px;color:var(--gold);line-height:1;margin-bottom:18px}
+.vp-card h3{font-family:var(--serif);font-size:24px;font-weight:600;color:var(--text);margin-bottom:10px}
+.vp-card p{font-size:14.5px;color:var(--text2);line-height:1.7}
+
+/* STATS BAND */
+.stats{background:linear-gradient(160deg,var(--bg3),var(--bg2));border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stats-in{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.stat{text-align:center;padding:14px 0}
+.stat-num{font-family:var(--serif);font-size:clamp(44px,5.5vw,62px);font-weight:600;color:var(--gold);line-height:1}
+.stat-label{font-size:12.5px;font-weight:500;letter-spacing:.05em;color:var(--text2);margin-top:8px}
+.stat + .stat{border-left:1px solid var(--border)}
+
+/* TOPIC GRID */
+.topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.topic{background:var(--bg2);padding:32px 28px;transition:background .2s}
+.topic:hover{background:var(--bg3)}
+.topic-tag{font-size:10px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.topic h3{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--text);margin-bottom:8px}
+.topic p{font-size:14px;color:var(--muted);line-height:1.65}
+
+/* ARTICLE FEED */
+.feed-bar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:36px}
+.cat-link{font-family:var(--sans);font-size:12.5px;font-weight:500;letter-spacing:.02em;padding:9px 17px;color:var(--text2);background:var(--bg2);border:1px solid var(--border);border-radius:999px;cursor:pointer;transition:all .18s}
+.cat-link:hover{border-color:var(--border2);color:var(--text)}
+.cat-link.active{background:var(--gold);border-color:var(--gold);color:#1a1813;font-weight:600}
+.feed-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.art-card{display:flex;flex-direction:column;background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:28px;transition:all .22s}
+.art-card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:0 22px 44px -26px rgba(0,0,0,.8)}
+.art-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.art-cat{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.art-mins{font-size:11px;font-weight:500;color:var(--muted)}
+.art-title{font-family:var(--serif);font-size:23px;font-weight:600;line-height:1.32;color:#f4f1e6;margin-bottom:12px;transition:color .18s}
+.art-card:hover .art-title{color:var(--gold-soft)}
+.art-excerpt{font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:18px;flex:1}
+.art-more{font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--gold);display:inline-flex;align-items:center;gap:6px}
+.art-more::after{content:"\2192";transition:transform .18s}
+.art-card:hover .art-more::after{transform:translateX(4px)}
+.feed-empty{grid-column:1/-1;text-align:center;padding:40px;color:var(--muted);font-family:var(--serif);font-style:italic;font-size:18px}
+
+/* QUOTE */
+.quote{text-align:center;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.quote-mark{font-family:var(--serif);font-size:120px;line-height:.4;color:var(--gold);opacity:.22;display:block;margin-bottom:18px}
+.quote-text{font-family:var(--serif);font-size:clamp(26px,3.6vw,40px);font-style:italic;font-weight:500;color:var(--text);max-width:840px;margin:0 auto;line-height:1.42}
+.quote-attr{font-size:12px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin-top:26px}
+
+/* INSTRUCTOR */
+.inst-in{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center}
+.inst-portrait{position:relative;aspect-ratio:4/5;border:1px solid var(--border2);border-radius:16px;
+  background:radial-gradient(420px 320px at 50% 30%,rgba(201,169,110,.16),transparent),linear-gradient(160deg,var(--bg3),var(--bg));
+  display:flex;align-items:center;justify-content:center}
+.inst-portrait .glyph{font-family:var(--serif);font-size:170px;color:var(--gold);opacity:.42;line-height:1}
+.inst-badge{position:absolute;bottom:22px;left:22px;right:22px;background:rgba(17,16,13,.82);backdrop-filter:blur(6px);border:1px solid var(--border2);border-radius:10px;padding:14px 18px}
+.inst-badge .n{font-family:var(--serif);font-size:19px;font-weight:600;color:var(--text)}
+.inst-badge .r{font-size:12px;color:var(--muted)}
+.inst-body p{font-size:16.5px;color:var(--text2);line-height:1.85;margin-bottom:16px}
+.inst-body .lead{font-family:var(--serif);font-size:23px;font-style:italic;color:var(--text);line-height:1.5}
+.inst-creds{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
+.inst-cred{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:12px 16px}
+.inst-cred b{display:block;font-family:var(--serif);font-size:24px;font-weight:600;color:var(--gold)}
+.inst-cred span{font-size:11.5px;color:var(--muted)}
+
+/* FAQ */
+.faq{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.faq-list{max-width:840px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:first-child{border-top:1px solid var(--border)}
+.faq-q{width:100%;background:none;border:none;cursor:pointer;text-align:left;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 4px;font-family:var(--serif);font-size:21px;font-weight:600;color:var(--text);transition:color .18s}
+.faq-q:hover{color:var(--gold)}
+.faq-icon{flex-shrink:0;width:26px;height:26px;border:1px solid var(--border2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-size:18px;color:var(--gold);transition:all .25s}
+.faq-item.open .faq-icon{transform:rotate(45deg);background:var(--gold);color:#1a1813;border-color:var(--gold)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.16,.7,.3,1)}
+.faq-a p{padding:0 4px 26px;font-size:15.5px;color:var(--text2);line-height:1.8}
+
+/* NEWSLETTER */
+.newsletter{position:relative;overflow:hidden;
+  background:radial-gradient(700px 360px at 50% 120%,rgba(201,169,110,.16),transparent),var(--bg)}
+.nl-in{max-width:600px;margin:0 auto;text-align:center}
+.nl-clef{font-family:var(--serif);font-size:56px;color:var(--gold);margin-bottom:8px;line-height:1}
+.nl-title{font-family:var(--serif);font-size:clamp(32px,4.5vw,46px);font-weight:600;color:var(--text);margin-bottom:12px}
+.nl-title em{color:var(--gold);font-style:italic}
+.nl-sub{font-size:16px;color:var(--text2);margin-bottom:30px;line-height:1.7}
+.nl-form{display:flex;gap:10px;max-width:460px;margin:0 auto}
+.nl-input{flex:1;background:var(--bg2);border:1px solid var(--border2);border-radius:8px;color:var(--text);font-size:14.5px;font-family:var(--sans);padding:14px 16px;outline:none;transition:border-color .18s}
+.nl-input::placeholder{color:var(--muted)}
+.nl-input:focus{border-color:var(--gold)}
+.nl-btn{background:var(--gold);color:#1a1813;font-family:var(--sans);font-size:13.5px;font-weight:600;padding:14px 26px;border:none;border-radius:8px;cursor:pointer;transition:all .18s;white-space:nowrap}
+.nl-btn:hover{background:var(--gold-soft);transform:translateY(-2px)}
+.nl-fine{font-size:12px;color:var(--muted);margin-top:16px}
+
+/* FOOTER */
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 30px}
+.footer-in{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.footer-logo{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--text);margin-bottom:12px}
+.footer-logo .clef{color:var(--gold);font-size:28px;line-height:0}
+.footer-logo em{color:var(--gold);font-style:italic}
+.footer-desc{font-size:14px;color:var(--muted);line-height:1.75;max-width:300px}
+.footer-head{font-size:11px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--text2);margin-bottom:16px}
+.footer-links{display:flex;flex-direction:column;gap:11px}
+.footer-links a{font-size:14px;color:var(--muted);transition:color .18s}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:26px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer-copy{font-size:12.5px;color:var(--muted)}
+
+@media(max-width:960px){
+  .hero-in,.story-in,.inst-in{grid-template-columns:1fr;gap:48px}
+  .hero-card{order:-1}
+  .vp-grid,.topic-grid,.feed-grid{grid-template-columns:1fr 1fr}
+  .stats-in{grid-template-columns:1fr 1fr;gap:0}
+  .stat:nth-child(3){border-left:none}
+  .stat + .stat{border-top:1px solid var(--border)}
+  .stat{padding:24px 0}
+  .footer-in{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .wrap{padding:0 20px}
+  .nav-links{display:none}
+  .nav-in{padding:0 20px}
+  .hero-in{padding:60px 20px}
+  .section{padding:64px 0}
+  .vp-grid,.topic-grid,.feed-grid,.footer-in{grid-template-columns:1fr}
+  .trust-in{gap:18px 32px}
+  .nl-form{flex-direction:column}
+}
+/* page */
+:root{
   --bg:#0d0d0f;
   --bg2:#131316;
   --bg3:#1a1a1f;
@@ -1302,9 +1530,9 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 0 2
 .art{max-width:760px;margin:48px auto;padding:0 24px 80px}
 .hdr{background:#f7f8fa;border-bottom:1px solid #e2e5ea;padding:18px 0}
 .hi{max-width:760px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center}
-h1{font-family:'Inter',sans-serif;font-size:clamp(26px,4vw,40px);font-weight:800;line-height:1.2;margin-bottom:16px;color:#111111}
+h1{font-family:'Inter',sans-serif;font-size:clamp(26px,4vw,40px);font-weight:800;line-height:1.2;margin-bottom:16px;color:#e8e6df}
 p{margin-bottom:18px;color:#444;line-height:1.75}
-.intro{font-size:18px;line-height:1.7;color:#111111}
+.intro{font-size:18px;line-height:1.7;color:#e8e6df}
 .concl{background:#f7f8fa;border-left:4px solid #c9a96e;padding:20px 24px;border-radius:0 8px 8px 0;margin-top:40px}
 .meta{font-size:13px;color:#999;margin-bottom:24px}
 </style>
@@ -1332,16 +1560,16 @@ p{margin-bottom:18px;color:#444;line-height:1.75}
   <p class="intro"><p>Most pianists treat sight-reading like a talent you either have or don't. I've heard that assumption from students at every level, from nervous beginners fumbling through a four-bar phrase to advanced players who can perform Chopin from memory but freeze the moment they open an unfamiliar score. The belief is almost universal, and it's almost entirely wrong. Sight-reading is a skill. And like any skill, it responds to deliberate, consistent practice in a way that raw repetition alone never produces.</p></p>
   <p><p>My argument is simple: fifteen minutes a day, structured correctly, will do more for your sight-reading than an hour of unfocused run-throughs. I've built this routine with students at Juilliard, at community music schools, and in private lessons, and the results are consistent enough that I'd stake my professional reputation on it. The key is not how long you practice but how precisely you use the time. Here's exactly how to spend those fifteen minutes.</p></p>
   
-<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#111111">Minutes One Through Three: Rhythmic Scanning Before You Play a Single Note</h2>
+<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#e8e6df">Minutes One Through Three: Rhythmic Scanning Before You Play a Single Note</h2>
 <div><p>Before your hands touch the keys, spend the first three minutes reading the score silently. This is the step most students skip, and skipping it is why they struggle. Scan the time signature, the key signature, and the overall phrase shape. Look for any rhythmic patterns that repeat. Identify the hardest bar visually, not by playing it, just by looking. Your brain needs a map before it can drive.</p><p>A 2019 study published in the <em>Journal of Research in Music Education</em> found that musicians who engaged in pre-performance score study, even for as little as 90 seconds, made significantly fewer rhythmic errors during first readings than those who began playing immediately. Ninety seconds. Imagine what three deliberate minutes can do. I tell my students to treat this phase like reading the first paragraph of a chapter before committing to the book. You're orienting, not performing.</p><p>During this scan, tap the pulse quietly on your thigh. Don't count out loud yet. Just feel where beat one lands in each bar and let the rhythm settle into your body before your fingers get involved. This small physical anchor makes an enormous difference when the reading starts.</p></div>
 
-<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#111111">Minutes Four Through Nine: The First Read-Through at a Tempo You Can Actually Keep</h2>
+<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#e8e6df">Minutes Four Through Nine: The First Read-Through at a Tempo You Can Actually Keep</h2>
 <div><p>Here's the editorial position I'll hold firmly: the single biggest mistake in sight-reading practice is stopping. Students stop when they hit a wrong note. They stop when a rhythm confuses them. They restart from the beginning. Every time they do this, they're training themselves to be dependent on repetition rather than responsive to the music moving forward in real time. Stopping is the habit that keeps sight-reading weak.</p><p>For minutes four through nine, you play through the piece once, at whatever tempo allows you to keep going without stopping. That tempo might feel embarrassingly slow. It might be half of what the score suggests. That's fine. In my work with intermediate students, I've consistently found that playing at 60% of the marked tempo while maintaining forward momentum produces better long-term fluency gains than playing at full tempo with frequent stops. Continuity is the whole point. Your eyes need to stay ahead of your hands, and that only happens when you refuse to look back.</p><p>Set a metronome. Don't play without one during this phase. The metronome isn't a crutch here; it's the contract you make with yourself to keep moving. If you miss a note, leave it. If a chord comes out wrong, let it pass. Your job for these six minutes is to finish the piece. Just finish it.</p></div>
 
-<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#111111">Minutes Ten Through Thirteen: Targeted Repair on Two Problem Spots Only</h2>
+<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#e8e6df">Minutes Ten Through Thirteen: Targeted Repair on Two Problem Spots Only</h2>
 <div><p>After the first read-through, you'll know exactly where things fell apart. Resist the urge to replay the whole piece. Instead, identify the two hardest spots, not five, not the whole second page, just two specific bars or transitions that genuinely tripped you up. Write them down if it helps. Then spend these four minutes working only on those moments.</p><p>Slow each problem spot down until it's comfortable, then bring it back up in small increments. Isolate the left hand if the coordination broke down. Clap the rhythm before you play it again. The goal here is targeted repair, not wholesale review. I can't tell you how many lessons I've spent watching students replay an entire page when the issue was four notes in bar seven. Precision matters more than coverage.</p><p>One honest caveat: this targeted approach doesn't work as well when a student's note-reading fundamentals are genuinely weak. If you're still sounding out individual notes rather than reading intervals and patterns as shapes, the repair phase becomes swamped by decoding problems. In that case, some parallel work on interval recognition, using a resource like musictheory.net, is worth adding outside this fifteen-minute window. The routine assumes basic fluency with the staff. If that's not there yet, build it separately.</p></div>
 
-<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#111111">Minutes Fourteen and Fifteen: The Second Read-Through as Performance</h2>
+<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#e8e6df">Minutes Fourteen and Fifteen: The Second Read-Through as Performance</h2>
 <div><p>The last two minutes are a performance. Not practice. You play the piece through again, from start to finish, and this time you treat it as if someone is listening. That mental shift is not trivial. When I tested this framing shift with a group of adult learners over eight weeks, asking them to mentally designate their second read as a performance rather than another practice attempt, their self-reported confidence scores rose noticeably, and their teachers observed measurably fewer mid-phrase hesitations. The stakes you assign to a task change how your brain processes it.</p><p>This second read will almost always be cleaner than the first. Not perfect, but cleaner. And that improvement, felt in real time, is what builds confidence over weeks and months. Sight-reading fluency isn't one dramatic breakthrough. It's the accumulation of hundreds of small second reads that went a little better than the first. You're training your nervous system to trust itself under mild pressure.</p><p>So after both read-throughs, take thirty seconds to note what improved and what still needs attention on a future day. Keep a small practice log. At least in my experience, students who track their sight-reading work even minimally, a notebook entry once a week is enough, show faster progress than those who practice identically but record nothing. Reflection closes the loop that makes deliberate practice actually deliberate.</p></div>
   <div class="concl"><p>Start tomorrow with a piece that's one full grade level below where you're comfortable. That's not cheating; that's smart design. The routine only works when the material is readable enough that you can implement all four phases without the music itself overwhelming the process. Pick something slightly easy, set your timer for fifteen minutes, and commit to the structure: scan, read through without stopping, repair two spots, perform the second read. Do it daily for thirty days. I'd be surprised if you don't notice a real shift by week three.</p></div>
 </div><div id="comments-section" style="max-width:760px;margin:64px auto 0;padding:0 24px 48px">
