@@ -1156,6 +1156,234 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 3
 }
 /* page */
 :root{
+  --bg:#11100d;
+  --bg2:#181712;
+  --bg3:#211f18;
+  --panel:#1d1b15;
+  --gold:#c9a96e;
+  --gold2:#b8944a;
+  --gold-soft:#e3cda0;
+  --burgundy:#7d2b3a;
+  --text:#efece2;
+  --text2:#cbc7b8;
+  --muted:#8d897c;
+  --border:#2c2a22;
+  --border2:#3a3729;
+  --serif:'Cormorant Garamond',serif;
+  --sans:'Inter',system-ui,sans-serif;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.16,.7,.3,1),transform .8s cubic-bezier(.16,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* NAV */
+.site-nav{background:rgba(17,16,13,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:200}
+.nav-in{max-width:1180px;margin:0 auto;padding:0 32px;display:flex;align-items:center;height:72px;gap:40px}
+.nav-logo{display:flex;align-items:center;gap:11px;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--text);letter-spacing:.01em}
+.nav-logo .clef{color:var(--gold);font-size:30px;line-height:0}
+.nav-logo em{color:var(--gold);font-style:italic;font-weight:600}
+.nav-links{display:flex;gap:4px;margin-left:auto}
+.nav-links a{font-family:var(--sans);font-size:12.5px;font-weight:500;letter-spacing:.03em;padding:8px 14px;color:var(--text2);border-radius:6px;transition:all .18s}
+.nav-links a:hover{color:var(--text);background:var(--bg3)}
+.nav-cta{margin-left:8px;background:var(--gold);color:#1a1813;font-family:var(--sans);font-size:12.5px;font-weight:600;letter-spacing:.02em;padding:10px 20px;border-radius:7px;transition:all .18s}
+.nav-cta:hover{background:var(--gold-soft);transform:translateY(-1px)}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--border);
+  background:radial-gradient(900px 460px at 78% 0%,rgba(201,169,110,.12),transparent 70%),var(--bg)}
+.hero-staff{position:absolute;inset:0;pointer-events:none;opacity:.5}
+.hero-staff span{position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--border2) 30%,var(--border2) 70%,transparent)}
+.hero-in{position:relative;max-width:1180px;margin:0 auto;padding:96px 32px;display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:center}
+.hero-kicker{display:inline-flex;align-items:center;gap:9px;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:26px}
+.hero-kicker::before{content:"";width:30px;height:1px;background:var(--gold)}
+.hero-h1{font-family:var(--serif);font-size:clamp(46px,6vw,80px);font-weight:600;line-height:1.03;letter-spacing:.005em;color:var(--text);margin-bottom:22px}
+.hero-h1 em{display:block;color:var(--gold);font-style:italic;font-weight:500}
+.hero-desc{font-size:17.5px;color:var(--text2);max-width:480px;margin-bottom:34px;line-height:1.75}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+.btn-gold{background:var(--gold);color:#1a1813;font-family:var(--sans);font-size:13.5px;font-weight:600;letter-spacing:.02em;padding:15px 28px;border-radius:8px;transition:all .18s}
+.btn-gold:hover{background:var(--gold-soft);transform:translateY(-2px);box-shadow:0 12px 30px -12px rgba(201,169,110,.5)}
+.btn-outline{border:1px solid var(--border2);color:var(--text);font-family:var(--sans);font-size:13.5px;font-weight:500;letter-spacing:.02em;padding:14px 27px;border-radius:8px;transition:all .18s}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.hero-tags{display:flex;gap:20px;flex-wrap:wrap}
+.hero-tag{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.hero-tag .dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+
+/* hero card */
+.hero-card{position:relative;background:linear-gradient(165deg,var(--bg2),var(--bg));border:1px solid var(--border2);border-radius:16px;padding:30px;box-shadow:0 30px 70px -30px rgba(0,0,0,.7)}
+.hero-card::before{content:"\1D11E";position:absolute;top:14px;right:22px;font-family:var(--serif);font-size:96px;color:var(--gold);opacity:.08;line-height:1}
+.hc-label{font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+.hc-list{display:flex;flex-direction:column}
+.hc-item{display:grid;grid-template-columns:34px 1fr;gap:14px;align-items:start;padding:14px 0;border-bottom:1px solid var(--border)}
+.hc-item:last-child{border-bottom:none;padding-bottom:0}
+.hc-item:first-child{padding-top:0}
+.hc-num{font-family:var(--serif);font-size:26px;font-weight:600;color:var(--gold);line-height:1}
+.hc-cat{font-size:9.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.hc-title{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--text);line-height:1.32;transition:color .18s}
+.hc-item:hover .hc-title{color:var(--gold)}
+
+/* TRUST STRIP */
+.trust{border-bottom:1px solid var(--border);background:var(--bg2)}
+.trust-in{max-width:1180px;margin:0 auto;padding:26px 32px;display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap}
+.trust-label{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.trust-item{font-family:var(--serif);font-size:18px;font-style:italic;color:var(--text2)}
+.trust-item b{color:var(--gold);font-style:normal;font-weight:600}
+
+/* SECTION SHELL */
+.section{padding:96px 0}
+.sec-head{max-width:680px;margin-bottom:52px}
+.sec-head.center{margin:0 auto 56px;text-align:center}
+.sec-label{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.sec-label::before{content:"";width:22px;height:1px;background:var(--gold)}
+.sec-head.center .sec-label::after{content:"";width:22px;height:1px;background:var(--gold)}
+.sec-title{font-family:var(--serif);font-size:clamp(32px,4.2vw,48px);font-weight:600;line-height:1.1;letter-spacing:.005em;color:var(--text)}
+.sec-title em{color:var(--gold);font-style:italic}
+.sec-sub{font-size:16.5px;color:var(--text2);margin-top:16px;line-height:1.7}
+
+/* STORY */
+.story{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.story-in{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.story-body p{font-size:16.5px;color:var(--text2);line-height:1.85;margin-bottom:18px}
+.story-body p:last-child{margin-bottom:0}
+.story-body .lead{font-family:var(--serif);font-size:24px;font-style:italic;color:var(--text);line-height:1.5;margin-bottom:24px}
+.story-panel{background:var(--panel);border:1px solid var(--border2);border-radius:16px;padding:40px}
+.story-step{display:grid;grid-template-columns:54px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--border)}
+.story-step:first-child{padding-top:0}
+.story-step:last-child{border-bottom:none;padding-bottom:0}
+.story-step-num{font-family:var(--serif);font-size:38px;font-weight:600;color:var(--gold);line-height:.9}
+.story-step h4{font-family:var(--serif);font-size:21px;font-weight:600;color:var(--text);margin-bottom:5px}
+.story-step p{font-size:14.5px;color:var(--muted);line-height:1.65}
+
+/* VALUE CARDS */
+.vp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.vp-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:34px 30px;transition:all .22s}
+.vp-card:hover{border-color:var(--border2);transform:translateY(-4px);background:var(--bg3)}
+.vp-icon{font-family:var(--serif);font-size:34px;color:var(--gold);line-height:1;margin-bottom:18px}
+.vp-card h3{font-family:var(--serif);font-size:24px;font-weight:600;color:var(--text);margin-bottom:10px}
+.vp-card p{font-size:14.5px;color:var(--text2);line-height:1.7}
+
+/* STATS BAND */
+.stats{background:linear-gradient(160deg,var(--bg3),var(--bg2));border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stats-in{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.stat{text-align:center;padding:14px 0}
+.stat-num{font-family:var(--serif);font-size:clamp(44px,5.5vw,62px);font-weight:600;color:var(--gold);line-height:1}
+.stat-label{font-size:12.5px;font-weight:500;letter-spacing:.05em;color:var(--text2);margin-top:8px}
+.stat + .stat{border-left:1px solid var(--border)}
+
+/* TOPIC GRID */
+.topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.topic{background:var(--bg2);padding:32px 28px;transition:background .2s}
+.topic:hover{background:var(--bg3)}
+.topic-tag{font-size:10px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.topic h3{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--text);margin-bottom:8px}
+.topic p{font-size:14px;color:var(--muted);line-height:1.65}
+
+/* ARTICLE FEED */
+.feed-bar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:36px}
+.cat-link{font-family:var(--sans);font-size:12.5px;font-weight:500;letter-spacing:.02em;padding:9px 17px;color:var(--text2);background:var(--bg2);border:1px solid var(--border);border-radius:999px;cursor:pointer;transition:all .18s}
+.cat-link:hover{border-color:var(--border2);color:var(--text)}
+.cat-link.active{background:var(--gold);border-color:var(--gold);color:#1a1813;font-weight:600}
+.feed-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.art-card{display:flex;flex-direction:column;background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:28px;transition:all .22s}
+.art-card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:0 22px 44px -26px rgba(0,0,0,.8)}
+.art-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.art-cat{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.art-mins{font-size:11px;font-weight:500;color:var(--muted)}
+.art-title{font-family:var(--serif);font-size:23px;font-weight:600;line-height:1.32;color:#f4f1e6;margin-bottom:12px;transition:color .18s}
+.art-card:hover .art-title{color:var(--gold-soft)}
+.art-excerpt{font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:18px;flex:1}
+.art-more{font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--gold);display:inline-flex;align-items:center;gap:6px}
+.art-more::after{content:"\2192";transition:transform .18s}
+.art-card:hover .art-more::after{transform:translateX(4px)}
+.feed-empty{grid-column:1/-1;text-align:center;padding:40px;color:var(--muted);font-family:var(--serif);font-style:italic;font-size:18px}
+
+/* QUOTE */
+.quote{text-align:center;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.quote-mark{font-family:var(--serif);font-size:120px;line-height:.4;color:var(--gold);opacity:.22;display:block;margin-bottom:18px}
+.quote-text{font-family:var(--serif);font-size:clamp(26px,3.6vw,40px);font-style:italic;font-weight:500;color:var(--text);max-width:840px;margin:0 auto;line-height:1.42}
+.quote-attr{font-size:12px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin-top:26px}
+
+/* INSTRUCTOR */
+.inst-in{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center}
+.inst-portrait{position:relative;aspect-ratio:4/5;border:1px solid var(--border2);border-radius:16px;
+  background:radial-gradient(420px 320px at 50% 30%,rgba(201,169,110,.16),transparent),linear-gradient(160deg,var(--bg3),var(--bg));
+  display:flex;align-items:center;justify-content:center}
+.inst-portrait .glyph{font-family:var(--serif);font-size:170px;color:var(--gold);opacity:.42;line-height:1}
+.inst-badge{position:absolute;bottom:22px;left:22px;right:22px;background:rgba(17,16,13,.82);backdrop-filter:blur(6px);border:1px solid var(--border2);border-radius:10px;padding:14px 18px}
+.inst-badge .n{font-family:var(--serif);font-size:19px;font-weight:600;color:var(--text)}
+.inst-badge .r{font-size:12px;color:var(--muted)}
+.inst-body p{font-size:16.5px;color:var(--text2);line-height:1.85;margin-bottom:16px}
+.inst-body .lead{font-family:var(--serif);font-size:23px;font-style:italic;color:var(--text);line-height:1.5}
+.inst-creds{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
+.inst-cred{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:12px 16px}
+.inst-cred b{display:block;font-family:var(--serif);font-size:24px;font-weight:600;color:var(--gold)}
+.inst-cred span{font-size:11.5px;color:var(--muted)}
+
+/* FAQ */
+.faq{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.faq-list{max-width:840px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:first-child{border-top:1px solid var(--border)}
+.faq-q{width:100%;background:none;border:none;cursor:pointer;text-align:left;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 4px;font-family:var(--serif);font-size:21px;font-weight:600;color:var(--text);transition:color .18s}
+.faq-q:hover{color:var(--gold)}
+.faq-icon{flex-shrink:0;width:26px;height:26px;border:1px solid var(--border2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-size:18px;color:var(--gold);transition:all .25s}
+.faq-item.open .faq-icon{transform:rotate(45deg);background:var(--gold);color:#1a1813;border-color:var(--gold)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.16,.7,.3,1)}
+.faq-a p{padding:0 4px 26px;font-size:15.5px;color:var(--text2);line-height:1.8}
+
+/* NEWSLETTER */
+.newsletter{position:relative;overflow:hidden;
+  background:radial-gradient(700px 360px at 50% 120%,rgba(201,169,110,.16),transparent),var(--bg)}
+.nl-in{max-width:600px;margin:0 auto;text-align:center}
+.nl-clef{font-family:var(--serif);font-size:56px;color:var(--gold);margin-bottom:8px;line-height:1}
+.nl-title{font-family:var(--serif);font-size:clamp(32px,4.5vw,46px);font-weight:600;color:var(--text);margin-bottom:12px}
+.nl-title em{color:var(--gold);font-style:italic}
+.nl-sub{font-size:16px;color:var(--text2);margin-bottom:30px;line-height:1.7}
+.nl-form{display:flex;gap:10px;max-width:460px;margin:0 auto}
+.nl-input{flex:1;background:var(--bg2);border:1px solid var(--border2);border-radius:8px;color:var(--text);font-size:14.5px;font-family:var(--sans);padding:14px 16px;outline:none;transition:border-color .18s}
+.nl-input::placeholder{color:var(--muted)}
+.nl-input:focus{border-color:var(--gold)}
+.nl-btn{background:var(--gold);color:#1a1813;font-family:var(--sans);font-size:13.5px;font-weight:600;padding:14px 26px;border:none;border-radius:8px;cursor:pointer;transition:all .18s;white-space:nowrap}
+.nl-btn:hover{background:var(--gold-soft);transform:translateY(-2px)}
+.nl-fine{font-size:12px;color:var(--muted);margin-top:16px}
+
+/* FOOTER */
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 30px}
+.footer-in{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.footer-logo{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--text);margin-bottom:12px}
+.footer-logo .clef{color:var(--gold);font-size:28px;line-height:0}
+.footer-logo em{color:var(--gold);font-style:italic}
+.footer-desc{font-size:14px;color:var(--muted);line-height:1.75;max-width:300px}
+.footer-head{font-size:11px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--text2);margin-bottom:16px}
+.footer-links{display:flex;flex-direction:column;gap:11px}
+.footer-links a{font-size:14px;color:var(--muted);transition:color .18s}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:26px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer-copy{font-size:12.5px;color:var(--muted)}
+
+@media(max-width:960px){
+  .hero-in,.story-in,.inst-in{grid-template-columns:1fr;gap:48px}
+  .hero-card{order:-1}
+  .vp-grid,.topic-grid,.feed-grid{grid-template-columns:1fr 1fr}
+  .stats-in{grid-template-columns:1fr 1fr;gap:0}
+  .stat:nth-child(3){border-left:none}
+  .stat + .stat{border-top:1px solid var(--border)}
+  .stat{padding:24px 0}
+  .footer-in{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .wrap{padding:0 20px}
+  .nav-links{display:none}
+  .nav-in{padding:0 20px}
+  .hero-in{padding:60px 20px}
+  .section{padding:64px 0}
+  .vp-grid,.topic-grid,.feed-grid,.footer-in{grid-template-columns:1fr}
+  .trust-in{gap:18px 32px}
+  .nl-form{flex-direction:column}
+}
+/* page */
+:root{
   --bg:#0d0d0f;
   --bg2:#131316;
   --bg3:#1a1a1f;
@@ -1302,9 +1530,9 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 0 2
 .art{max-width:760px;margin:48px auto;padding:0 24px 80px}
 .hdr{background:#f7f8fa;border-bottom:1px solid #e2e5ea;padding:18px 0}
 .hi{max-width:760px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center}
-h1{font-family:'Inter',sans-serif;font-size:clamp(26px,4vw,40px);font-weight:800;line-height:1.2;margin-bottom:16px;color:#111111}
+h1{font-family:'Inter',sans-serif;font-size:clamp(26px,4vw,40px);font-weight:800;line-height:1.2;margin-bottom:16px;color:#e8e6df}
 p{margin-bottom:18px;color:#444;line-height:1.75}
-.intro{font-size:18px;line-height:1.7;color:#111111}
+.intro{font-size:18px;line-height:1.7;color:#e8e6df}
 .concl{background:#f7f8fa;border-left:4px solid #c9a96e;padding:20px 24px;border-radius:0 8px 8px 0;margin-top:40px}
 .meta{font-size:13px;color:#999;margin-bottom:24px}
 </style>
@@ -1332,16 +1560,16 @@ p{margin-bottom:18px;color:#444;line-height:1.75}
   <p class="intro"><p>Most pianists treat chord progressions like a sequence of separate objects, reading left hand, then right hand, note by note, as if they've never seen harmony before. I've watched this happen in studio after studio, from nervous freshmen at Juilliard to adult returners in community workshops. The result is always the same: a stumbling, hesitant read that bears almost no relationship to the music on the page. According to a 2019 study published in the <em>Psychology of Music</em>, pianists who chunk musical information into harmonic units rather than individual pitches sight-read new material up to 40% more accurately under timed conditions. That single finding should reshape how every piano teacher approaches this skill.</p></p>
   <p><p>My position is straightforward: sight-reading chord progressions is a learnable skill, not a gift, and it improves faster than most students expect once you stop practicing it the wrong way. The method I teach isn't about reading faster. It's about reading smarter, recognizing the harmonic architecture of a passage before your fingers touch a single key. This article lays out exactly how to do that, step by step, the way I'd explain it across a semester of private lessons.</p></p>
   
-<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#111111">Train Your Eyes to See Harmony, Not Just Notes</h2>
+<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#e8e6df">Train Your Eyes to See Harmony, Not Just Notes</h2>
 <div><p>The first habit to build is scanning for chord shapes rather than reading pitches sequentially. When you look at a measure with a C major triad in root position, your brain shouldn't be processing C, E, G one at a time. It should recognize a stacked-thirds shape on the lines C-E-G and call it what it is: a major triad in root position. This sounds obvious, but it takes genuine, deliberate practice to rewire that reflex. I'd estimate it takes most adult learners somewhere between four and eight weeks of daily work before the recognition becomes automatic.</p><p>Start by drilling chord shapes away from actual repertoire. Take a page of block chords in one key and practice naming each chord aloud before playing it. Don't play first. Name first. This forces your eyes to do the cognitive work your fingers usually rush past. When I tested this approach with a group of twelve intermediate students over one semester, every single one reported faster recognition by week six, and ten of the twelve showed measurable improvement in their end-of-term sight-reading evaluations. That's not a small result.</p><p>Once you can name chords quickly in isolation, start looking for chord quality patterns across full progressions. A I-IV-V-I in C major looks a specific way on the staff. So does a ii-V-I in G major. Train your eyes to spot those recurring shapes the way a fluent reader spots common words, not by sounding out letters, but by pattern recognition built through repetition.</p></div>
 
-<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#111111">Use Roman Numeral Thinking Before You Play a Single Note</h2>
+<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#e8e6df">Use Roman Numeral Thinking Before You Play a Single Note</h2>
 <div><p>Before playing any new chord progression, spend ten to fifteen seconds scanning the key signature and identifying the tonal center. Then look at the bass line or the root movement and try to assign Roman numerals, even roughly. You don't need to be perfect. You need to prime your brain with a harmonic map. In most cases, even identifying whether a chord is tonic, dominant, or subdominant in function is enough to guide your hands toward reasonable choices.</p><p>This is where a lot of self-taught pianists hit a wall, and honestly, it's where I have the most sympathy for them. Roman numeral analysis feels abstract until you've used it in real time. But once it clicks, it becomes the single most powerful tool in sight-reading harmony. Think of it this way: if you know you're looking at a dominant seventh chord resolving to the tonic, your left hand already knows roughly where it's going before you've read a single note in the right hand. That predictive reading is what separates fluid sight-readers from labored ones.</p><p>I'd encourage you to pair this habit with <a href='/sight-reading-practice-without-bad-habits/'>practicing sight-reading in ways that don't wire in bad habits</a>, because Roman numeral scanning only helps if you're genuinely reading ahead rather than using analysis as an excuse to slow down and second-guess every chord. The goal is speed of recognition, not academic accuracy under pressure.</p></div>
 
-<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#111111">The Common Misconception About Hands-Separate Practice</h2>
+<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#e8e6df">The Common Misconception About Hands-Separate Practice</h2>
 <div><p>Here's the uncomfortable truth: practicing chord progressions hands-separately before sight-reading them together is, in most cases, counterproductive. I know that contradicts what many teachers say. But sight-reading is a holistic skill. When you split the hands, you're no longer sight-reading, you're learning the piece. Those are different activities with different cognitive demands, and conflating them is one of the most common mistakes I see in students who plateau.</p><p>The exception, and I'll acknowledge this genuinely, is when a student has a significant technical limitation in one hand that prevents them from tracking the other. In that case, short bursts of isolated work can be appropriate. But the default should be playing chord progressions hands-together from the first read, even if it means playing more slowly, leaving out inner voices, or simplifying on the fly. The skill you're building is coordinated reading, and you can only build it by doing the coordinated reading.</p><p>Simplification is underrated and underused. If you encounter a four-voice chorale progression and your hands aren't keeping up, drop the inner voices and play soprano and bass only. You're still tracking the harmonic motion. You're still developing the skill. And you're keeping the music moving, which matters enormously in sight-reading. A skeleton that moves is more musical than a complete chord that stops.</p></div>
 
-<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#111111">Build a Daily Routine Around Short, Focused Chord-Reading Sessions</h2>
+<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#e8e6df">Build a Daily Routine Around Short, Focused Chord-Reading Sessions</h2>
 <div><p>In my experience, the students who improve fastest at reading chord progressions aren't the ones who practice longest. They're the ones who practice most consistently in short, focused sessions with fresh material every single time. Fifteen minutes of real sight-reading, meaning material you've never seen before, beats an hour of replaying familiar passages with marginal adjustments. If you haven't already structured your practice this way, <a href='/15-minute-daily-sight-reading-routine/'>a focused 15-minute daily sight-reading routine</a> is the most efficient framework I've found for building this specific kind of fluency.</p><p>For chord progressions specifically, I recommend sourcing material from hymn books, classical song accompaniments, and lead sheets with written-out voicings. These sources give you dense harmonic content without the distraction of complex melodic lines. Bach's four-voice chorales are arguably the best sight-reading material ever written for this purpose. There are over 370 of them, all harmonically rich, and most intermediate pianists could work through them for years without exhausting the material.</p><p>Set a metronome to a tempo where you can keep moving without stopping, even if that tempo feels embarrassingly slow. Slow and continuous builds the neural pathway you actually need. Stopping to fix a wrong chord teaches your brain that stopping is acceptable, and in sight-reading, it never is. So commit to forward motion above all else, and let the tempo creep upward naturally as your recognition improves over weeks, not days.</p></div>
   <div class="concl"><p>Today, before your next practice session, pull out any hymnal or Bach chorale book and spend ten minutes scanning the first page for chord shapes before playing a single note. Name what you see. Identify the key, spot the cadences, and assign rough Roman numerals to the strongest structural chords. Then play it through at a tempo you can sustain without stopping. That single exercise, done daily, will teach you more about sight-reading chord progressions than any method book I've ever seen. The skill builds quietly and then, one day, you sit down at an unfamiliar piece and your hands just know where to go. That's the moment every one of my students works toward, and it's absolutely within your reach.</p></div>
 </div><div id="comments-section" style="max-width:760px;margin:64px auto 0;padding:0 24px 48px">
