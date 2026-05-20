@@ -259,6 +259,24 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 3
   --border2:#3a3729;
   --serif:'Cormorant Garamond',serif;
   --sans:'Inter',system-ui,sans-serif;
+}@media(max-width:960px){
+  .hero-in,.story-in,.inst-in{grid-template-columns:1fr;gap:48px}
+  .hero-card{order:-1}
+  .vp-grid,.topic-grid,.feed-grid{grid-template-columns:1fr 1fr}
+  .stats-in{grid-template-columns:1fr 1fr;gap:0}
+  .stat:nth-child(3){border-left:none}
+  .stat + .stat{border-top:1px solid var(--border)}
+  .stat{padding:24px 0}
+  .footer-in{grid-template-columns:1fr 1fr}
+}@media(max-width:620px){
+  .wrap{padding:0 20px}
+  .nav-links{display:none}
+  .nav-in{padding:0 20px}
+  .hero-in{padding:60px 20px}
+  .section{padding:64px 0}
+  .vp-grid,.topic-grid,.feed-grid,.footer-in{grid-template-columns:1fr}
+  .trust-in{gap:18px 32px}
+  .nl-form{flex-direction:column}
 }
 .art-card{display:flex;flex-direction:column;background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:28px;transition:all .22s}@media(max-width:960px){
   .hero-in,.story-in,.inst-in{grid-template-columns:1fr;gap:48px}
@@ -589,7 +607,7 @@ p{margin-bottom:18px;color:#444;line-height:1.75}
   </div>
 </nav>
 <article itemscope itemtype="https://schema.org/Article"><div class="art">
-  <div class="meta"><a href="../" style="color:#999">← Home</a> &nbsp;·&nbsp; <time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15">May 15, 2026</time></time></time> &nbsp;·&nbsp; Music Education</div>
+  <div class="meta"><a href="../" style="color:#999">← Home</a> &nbsp;·&nbsp; <time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15">May 15, 2026</time></time></time></time> &nbsp;·&nbsp; Music Education</div>
   <h1>How to Practice Sight-Reading Without Wiring in Bad Habits</h1>
   <div style="font-size:13px;color:#999;margin-bottom:24px">By <strong style="color:#444">Professor Laura Kim</strong></div>
   <img src="https://images.pexels.com/photos/5766750/pexels-photo-5766750.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="A pianist's hands on piano keys with an open sheet music book on the stand in soft light" loading="lazy" style="width:100%;height:400px;object-fit:cover;border-radius:8px;margin:28px 0"><p style="font-size:11px;color:#999;margin:-16px 0 20px">Photo by Anastasia Kolchina / Pexels</p>
@@ -732,7 +750,7 @@ p{margin-bottom:18px;color:#444;line-height:1.75}
     }).catch(function(){allComments=[];rerender();});
   }
 })();
-</script></article></article></article>
+</script></article></article></article></article>
 <footer>
   <div class="wrap">
     <div class="footer-in">
