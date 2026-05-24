@@ -7,7 +7,7 @@
     "date_iso": "2026-05-20",
     "date_display": "May 20, 2026",
     "text": "This approach changed everything in my studio! I stopped naming intervals first and my students' ears developed so much faster. They actually understand the relationships between notes now instead of just memorizing labels.",
-    "likes": 9
+    "likes": 0
   },
   {
     "id": "c2174",
@@ -17,36 +17,6 @@
     "date_iso": "2026-05-24",
     "date_display": "May 24, 2026",
     "text": "Interesting theory, but how long does this actually take compared to traditional methods? My students need to pass theory exams and I'm worried about falling behind on curriculum.",
-    "likes": 5
-  },
-  {
-    "id": "c3536",
-    "name": "Monica K.",
-    "initials": "MK",
-    "color": "#14b8a6",
-    "date_iso": "2026-05-27",
-    "date_display": "May 27, 2026",
-    "text": "YES! I've been doing this intuitively with my younger students for years and couldn't explain why it worked so well. Great to see it validated in writing.",
-    "likes": 11
-  },
-  {
-    "id": "c4680",
-    "name": "Derek H.",
-    "initials": "DH",
-    "color": "#38bdf8",
-    "date_iso": "2026-06-01",
-    "date_display": "Jun 1, 2026",
-    "text": "This makes sense for relative pitch training, but absolute pitch learners might need a different approach. Has anyone tried this with both methods in the same classroom?",
-    "likes": 3
-  },
-  {
-    "id": "c5771",
-    "name": "Lisa P.",
-    "initials": "LP",
-    "color": "#3ecf8e",
-    "date_iso": "2026-06-03",
-    "date_display": "Jun 3, 2026",
-    "text": "Finally someone wrote this down. My high school choir can now identify fourths and fifths by ear within weeks instead of months. The singing first method is a game changer.",
-    "likes": 8
+    "likes": 1
   }
 ]
