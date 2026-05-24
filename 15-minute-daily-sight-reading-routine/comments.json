@@ -7,7 +7,7 @@
     "date_iso": "2026-05-16",
     "date_display": "May 16, 2026",
     "text": "Finally someone breaking down sight-reading into manageable chunks. I've been doing 20 minutes daily for 3 months and my students' confidence has noticeably improved. The key really is consistency over intensity.",
-    "likes": 9
+    "likes": 0
   },
   {
     "id": "c2383",
@@ -17,7 +17,7 @@
     "date_iso": "2026-05-19",
     "date_display": "May 19, 2026",
     "text": "Does anyone else struggle with getting their kids to actually do the routine every day? I find they lose interest after about a week. Maybe I need better materials?",
-    "likes": 6
+    "likes": 0
   },
   {
     "id": "c3902",
@@ -27,26 +27,6 @@
     "date_iso": "2026-05-22",
     "date_display": "May 22, 2026",
     "text": "This is exactly what I needed. Started with my 8-year-old last Monday and already seeing results. The progression from simple to complex makes so much sense.",
-    "likes": 11
-  },
-  {
-    "id": "c4365",
-    "name": "Sophie L.",
-    "initials": "SL",
-    "color": "#f97316",
-    "date_iso": "2026-05-26",
-    "date_display": "May 26, 2026",
-    "text": "I appreciate the article but 15 minutes might be too ambitious for some younger students. Would love to see variations for different age groups and skill levels.",
-    "likes": 7
-  },
-  {
-    "id": "c5797",
-    "name": "David H.",
-    "initials": "DH",
-    "color": "#a78bfa",
-    "date_iso": "2026-05-30",
-    "date_display": "May 30, 2026",
-    "text": "Been teaching for 12 years and this approach actually aligns with research on deliberate practice. My only critique is that the article could emphasize the importance of reading different genres, not just classical.",
-    "likes": 8
+    "likes": 1
   }
 ]
