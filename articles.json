@@ -64,5 +64,64 @@
       "jrme.sagepub.com"
     ],
     "category": "Ear Training"
+  },
+  {
+    "title": "How the 2022 NAMM Music Education Report Changed What We Thought We Knew About Student Access",
+    "slug": "2022-namm-music-education-access-report",
+    "meta_description": "Laura Kim on the 2022 NAMM Foundation music education report and why its findings on student access still matter for every music teacher right now.",
+    "date": "January 13, 2022",
+    "date_iso": "2022-01-13",
+    "author": "Laura Kim",
+    "image": "https://images.pexels.com/photos/8363103/pexels-photo-8363103.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nammfoundation.org",
+      "nafme.org",
+      "frontiersin.org"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "How the NAMM Foundation's 2021 Music Education Report Changed What We Ask of Schools",
+    "slug": "namm-2021-music-education-report",
+    "meta_description": "Laura Kim reflects on the NAMM Foundation's landmark 2021 music education report and what it meant for teachers, students, and the future of music access.",
+    "date": "June 04, 2021",
+    "date_iso": "2021-06-04",
+    "author": "Laura Kim",
+    "image": "https://images.pexels.com/photos/7521172/pexels-photo-7521172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nammfoundation.org",
+      "nafme.org",
+      "edweek.org",
+      "arts.gov"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "How Noteflight's 2022 Classroom Expansion Quietly Reshaped Music Notation Education",
+    "slug": "noteflight-2022-classroom-music-education",
+    "meta_description": "In 2022, Noteflight's expanded classroom tools changed how music educators teach notation. Here's what it meant for the field, and what teachers should know.",
+    "date": "November 25, 2022",
+    "date_iso": "2022-11-25",
+    "author": "Laura Kim",
+    "image": "https://images.pexels.com/photos/8798923/pexels-photo-8798923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "noteflight.com",
+      "namm.org",
+      "nces.ed.gov",
+      "journals.sagepub.com"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
