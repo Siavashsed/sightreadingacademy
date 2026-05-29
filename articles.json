@@ -81,7 +81,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Practice Systems"
   },
   {
     "title": "How the NAMM Foundation's 2021 Music Education Report Changed What We Ask of Schools",
@@ -100,7 +101,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Sight-Reading"
   },
   {
     "title": "How Noteflight's 2022 Classroom Expansion Quietly Reshaped Music Notation Education",
@@ -119,7 +121,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Sight-Reading"
   },
   {
     "title": "Sight-Reading in Different Time Signatures Without Counting Out Loud",
@@ -136,7 +139,8 @@
     "posted_iso": "2026-05-29",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Rhythm"
   },
   {
     "title": "How the 2024 NAMM Global Report Reframed Music Education Access for a New Generation",
@@ -156,6 +160,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Sight-Reading"
   }
 ]
