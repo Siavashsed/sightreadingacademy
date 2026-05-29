@@ -120,5 +120,42 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Sight-Reading in Different Time Signatures Without Counting Out Loud",
+    "slug": "sight-reading-time-signatures-without-counting",
+    "meta_description": "Professor Laura Kim shares a methodical approach to sight-reading in different time signatures without counting aloud. Build internal pulse that actually sticks.",
+    "date": "May 29, 2026",
+    "date_iso": "2026-05-29",
+    "author": "Laura Kim",
+    "image": "https://images.pexels.com/photos/9391648/pexels-photo-9391648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ncbi.nlm.nih.gov",
+      "journals.sagepub.com"
+    ],
+    "posted_iso": "2026-05-29",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "How the 2024 NAMM Global Report Reframed Music Education Access for a New Generation",
+    "slug": "2024-namm-music-education-report",
+    "meta_description": "Professor Laura Kim breaks down the 2024 NAMM Foundation report and what it actually means for music teachers on the ground right now.",
+    "date": "August 17, 2024",
+    "date_iso": "2024-08-17",
+    "author": "Laura Kim",
+    "image": "https://images.pexels.com/photos/17755451/pexels-photo-17755451.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nammfoundation.org",
+      "nafme.org",
+      "arts.gov",
+      "journals.sagepub.com"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
