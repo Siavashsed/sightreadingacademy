@@ -162,5 +162,41 @@
       "en"
     ],
     "category": "Sight-Reading"
+  },
+  {
+    "title": "Why Music Theory Gaps Sabotage Your Students' Performance Confidence",
+    "slug": "music-theory-gaps-performance-confidence",
+    "meta_description": "Music theory gaps quietly destroy student confidence before a performance. Prof. Laura Kim explains why and what to do about it.",
+    "date": "May 31, 2026",
+    "date_iso": "2026-05-31",
+    "author": "Laura Kim",
+    "image": "https://images.pexels.com/photos/7714073/pexels-photo-7714073.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "frontiersin.org",
+      "arts.gov"
+    ],
+    "posted_iso": "2026-05-31",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "How Noteflight's 2023 AI Notation Features Changed What Music Teachers Actually Expect From Software",
+    "slug": "noteflight-2023-ai-notation-music-education",
+    "meta_description": "A 2023 retrospective on Noteflight's AI-assisted notation update and what it meant for music education classrooms nationwide.",
+    "date": "September 19, 2023",
+    "date_iso": "2023-09-19",
+    "author": "Laura Kim",
+    "image": "https://images.pexels.com/photos/14771584/pexels-photo-14771584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "noteflight.com",
+      "journals.sagepub.com",
+      "nces.ed.gov"
+    ],
+    "posted_iso": "2026-05-31",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
