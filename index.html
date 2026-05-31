@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="alternate icon" href="favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <title>Elyar Khosravi - Musician, Tutor, Composer</title>
 <meta name="description" content="Elyar Khosravi is a musician and educator. Daily practice tips, free resources, group and private classes, plus upcoming concerts and live events.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -313,9 +312,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:72px 0 3
   .marquee-track{font-size:16px;gap:32px}
 }
 
-/* CONTRAST-AUDIT v2 - auto-derived from site theme so it adapts to each
-   palette instead of forcing one fixed color (which broke white-on-white
-   on every light-bg site). */
+/* CONTRAST-AUDIT v1 */
 body[data-page-depth="1"] h1,
 body[data-page-depth="1"] h2,
 body[data-page-depth="1"] h3,
@@ -325,7 +322,7 @@ body[data-page-depth="1"] .mag-hero h1,
 body[data-page-depth="1"] .imm-hero h1,
 body[data-page-depth="1"] article h1,
 body[data-page-depth="1"] article h2,
-body[data-page-depth="1"] article h3{color:#0a0a0a !important}
+body[data-page-depth="1"] article h3{color:#ffffff !important}
 body[data-page-depth="1"] article p,
 body[data-page-depth="1"] article li,
 body[data-page-depth="1"] .art-body p,
@@ -333,14 +330,16 @@ body[data-page-depth="1"] .mag-body p,
 body[data-page-depth="1"] .imm-body p,
 body[data-page-depth="1"] article .intro,
 body[data-page-depth="1"] article .concl,
-body[data-page-depth="1"] article strong{color:#171717 !important}
+body[data-page-depth="1"] article strong{color:#e6e6e6 !important}
 body[data-page-depth="1"] article a,
 body[data-page-depth="1"] article p a,
-body[data-page-depth="1"] article .intro a{color:#0a0a0a !important;text-decoration:underline;text-underline-offset:3px}
+body[data-page-depth="1"] article .intro a{color:#f5b14d !important;text-decoration:underline;text-underline-offset:3px}
 /* /CONTRAST-AUDIT */
 </style>
 </head>
 <body>
+<!--SHELL:ACCENT:#f5b14d-->
+<!--SHELL:HEADER-->
 <nav class="site-nav">
   <div class="nav-in">
     <a href="./" class="nav-logo"><span class="mark">&#9839;</span>Elyar <em>Khosravi</em></a>
@@ -354,6 +353,8 @@ body[data-page-depth="1"] article .intro a{color:#0a0a0a !important;text-decorat
     <a href="./#newsletter" class="nav-cta">Join Free</a>
   </div>
 </nav>
+<!--/SHELL:HEADER-->
+
 <section class="hero">
   <div class="hero-staff">
     <span style="top:30%"></span><span style="top:40%"></span><span style="top:50%"></span><span style="top:60%"></span><span style="top:70%"></span>
@@ -638,9 +639,10 @@ body[data-page-depth="1"] article .intro a{color:#0a0a0a !important;text-decorat
   </div>
 </section>
 
-<!-- VIEW_ALL_ARTICLES_LINK_PLACED -->
+<!-- VIEW_ALL_ARTICLES_LINK -->
+<div class="view-all" style="text-align:center;padding:36px 24px 56px;font-family:inherit"><a href="./articles.html" style="display:inline-block;color:currentColor;border:1px solid currentColor;padding:11px 24px;border-radius:999px;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;opacity:.85;transition:opacity .15s" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='.85'">View all resources &#8594;</a></div>
 
-<div style="text-align:center;padding:40px 24px 56px"><a href="./articles" style="color:currentColor;text-decoration:none;font-family:Georgia,serif;font-size:22px;font-style:italic;border-bottom:1px solid currentColor;padding-bottom:3px">The full archive</a></div>
+<!--SHELL:FOOTER-->
 <footer>
   <div class="wrap">
     <div class="footer-in">
@@ -676,9 +678,9 @@ body[data-page-depth="1"] article .intro a{color:#0a0a0a !important;text-decorat
         <div class="footer-head">Site</div>
         <div class="footer-links">
           <a href="./">Home</a>
-          <a href="about">About</a>
-          <a href="privacy">Privacy</a>
-          <a href="terms">Terms</a>
+          <a href="about.html">About</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
         </div>
       </div>
     </div>
@@ -768,5 +770,6 @@ const io=new IntersectionObserver(entries=>{
 window.__revealScan=function(){document.querySelectorAll(".reveal:not(.in)").forEach(el=>io.observe(el));};
 window.__revealScan();
 </script>
+<!--/SHELL:FOOTER-->
 </body>
 </html>
