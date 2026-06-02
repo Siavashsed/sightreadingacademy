@@ -178,7 +178,8 @@
     "posted_iso": "2026-05-31",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Music Theory"
   },
   {
     "title": "How Noteflight's 2023 AI Notation Features Changed What Music Teachers Actually Expect From Software",
@@ -197,6 +198,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Rhythm"
   }
 ]
