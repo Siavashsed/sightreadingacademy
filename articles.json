@@ -200,5 +200,41 @@
       "en"
     ],
     "category": "Rhythm"
+  },
+  {
+    "title": "Teaching Music Theory Through Improvisation: Why Workbooks Are Holding Your Students Back",
+    "slug": "music-theory-improvisation-ditch-workbooks",
+    "meta_description": "Professor Laura Kim argues that teaching music theory through improvisation builds deeper understanding than workbooks ever can. Here's how to do it.",
+    "date": "June 07, 2026",
+    "date_iso": "2026-06-07",
+    "author": "Laura Kim",
+    "image": "https://images.pexels.com/photos/14989533/pexels-photo-14989533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "jstor.org",
+      "nafme.org"
+    ],
+    "posted_iso": "2026-06-07",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "How Google's 2023 AI Music Tools Shook Up Music Education (And What Teachers Actually Think)",
+    "slug": "google-musiclm-music-education-2023",
+    "meta_description": "Laura Kim reflects on Google's MusicLM and what AI music generation meant for music educators in 2023. Real classroom context, real stakes.",
+    "date": "July 27, 2023",
+    "date_iso": "2023-07-27",
+    "author": "Laura Kim",
+    "image": "https://images.pexels.com/photos/6935980/pexels-photo-6935980.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "arxiv.org",
+      "arts.gov",
+      "nafme.org"
+    ],
+    "posted_iso": "2026-06-07",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
