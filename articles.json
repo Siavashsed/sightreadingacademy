@@ -236,5 +236,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Musicnotes Pro Hit 4 Million Users in 2022. Music Teachers Took Notice.",
+    "slug": "musicnotes-pro-2022-music-education",
+    "meta_description": "Laura Kim on why Musicnotes Pro's 2022 growth milestone reshaped how music educators think about digital sheet music and student access.",
+    "date": "March 08, 2022",
+    "date_iso": "2022-03-08",
+    "author": "Laura Kim",
+    "image": "https://images.pexels.com/photos/9118643/pexels-photo-9118643.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "musicnotes.com",
+      "namm.org",
+      "journals.sagepub.com"
+    ],
+    "posted_iso": "2026-06-09",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
