@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://siavashsed.github.io/sightreadingacademy/</loc><lastmod>2026-06-30</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://siavashsed.github.io/sightreadingacademy/about/</loc><lastmod>2026-06-30</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://siavashsed.github.io/sightreadingacademy/contact/</loc><lastmod>2026-06-30</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://siavashsed.github.io/sightreadingacademy/privacy/</loc><lastmod>2026-06-30</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://siavashsed.github.io/sightreadingacademy/</loc><lastmod>2026-07-01</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://siavashsed.github.io/sightreadingacademy/about/</loc><lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://siavashsed.github.io/sightreadingacademy/contact/</loc><lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://siavashsed.github.io/sightreadingacademy/privacy/</loc><lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://siavashsed.github.io/sightreadingacademy/sight-reading-practice-without-bad-habits/</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://siavashsed.github.io/sightreadingacademy/15-minute-daily-sight-reading-routine/</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://siavashsed.github.io/sightreadingacademy/rhythm-harder-fix-than-pitch/</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -19,4 +19,6 @@
   <url><loc>https://siavashsed.github.io/sightreadingacademy/music-theory-improvisation-ditch-workbooks/</loc><lastmod>2026-06-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://siavashsed.github.io/sightreadingacademy/google-musiclm-music-education-2023/</loc><lastmod>2023-07-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://siavashsed.github.io/sightreadingacademy/musicnotes-pro-2022-music-education/</loc><lastmod>2022-03-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://siavashsed.github.io/sightreadingacademy/teaching-improvisation-classical-musicians/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://siavashsed.github.io/sightreadingacademy/sight-reading-factory-2022-ai-feedback/</loc><lastmod>2022-10-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
