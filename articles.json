@@ -255,5 +255,42 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Classical Musicians Can Improvise. They Just Don't Know It Yet.",
+    "slug": "teaching-improvisation-classical-musicians",
+    "meta_description": "Professor Laura Kim on why classical musicians freeze when asked to improvise, and the practical steps that actually break through that wall.",
+    "date": "July 01, 2026",
+    "date_iso": "2026-07-01",
+    "author": "Laura Kim",
+    "image": "https://images.pexels.com/photos/10252598/pexels-photo-10252598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "journals.sagepub.com",
+      "nafme.org",
+      "psycnet.apa.org"
+    ],
+    "posted_iso": "2026-07-01",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Sight Reading Factory Added AI Feedback in 2022 and Teachers Noticed",
+    "slug": "sight-reading-factory-2022-ai-feedback",
+    "meta_description": "Professor Laura Kim on how Sight Reading Factory's 2022 AI feedback update shifted music education practice and what it meant for real classroom teachers.",
+    "date": "October 06, 2022",
+    "date_iso": "2022-10-06",
+    "author": "Laura Kim",
+    "image": "https://images.pexels.com/photos/7521360/pexels-photo-7521360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "sightreadingfactory.com",
+      "journals.sagepub.com",
+      "nammfoundation.org"
+    ],
+    "posted_iso": "2026-07-01",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
