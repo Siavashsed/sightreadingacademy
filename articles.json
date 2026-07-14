@@ -292,5 +292,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The Year Piano Apps Filled Every Empty Practice Room",
+    "slug": "piano-apps-2021-sight-reading",
+    "meta_description": "In 2021, Simply Piano and Yousician boomed while lessons went remote. Here is what those apps built in students, and the one skill they quietly skipped.",
+    "date": "December 06, 2021",
+    "date_iso": "2021-12-06",
+    "author": "Professor Laura Kim",
+    "image": "https://images.pexels.com/photos/38523585/pexels-photo-38523585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nfhs.org",
+      "tandfonline.com"
+    ],
+    "posted_iso": "2026-07-13",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
