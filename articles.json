@@ -327,5 +327,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The Metronome Is a Ruler, Not a Teacher",
+    "slug": "metronome-ruler-not-teacher",
+    "meta_description": "How to practice with a metronome the right way, which drills build real internal timing, and when turning the click off makes you better.",
+    "date": "July 17, 2026",
+    "date_iso": "2026-07-17",
+    "author": "Laura Kim",
+    "image": "https://images.pexels.com/photos/7570127/pexels-photo-7570127.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "journals.sagepub.com",
+      "link.springer.com"
+    ],
+    "posted_iso": "2026-07-17",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
