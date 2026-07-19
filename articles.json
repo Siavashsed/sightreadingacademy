@@ -344,5 +344,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Slow Practice Works, but Only at the Speed of No Mistakes",
+    "slug": "how-slow-is-slow-practice",
+    "meta_description": "Slow practice works because your brain records every repetition. A Juilliard trained teacher explains how slow is slow enough, with a simple tempo rule.",
+    "date": "July 19, 2026",
+    "date_iso": "2026-07-19",
+    "author": "Laura Kim",
+    "image": "https://images.pexels.com/photos/6671943/pexels-photo-6671943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "journals.sagepub.com",
+      "psycnet.apa.org",
+      "cell.com"
+    ],
+    "posted_iso": "2026-07-19",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
