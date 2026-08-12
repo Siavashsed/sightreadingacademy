@@ -136,6 +136,48 @@ p{text-wrap:pretty}
   .nav-in{background:rgba(19,17,15,.92)}
   .site-nav.stuck .nav-in{background:rgba(19,17,15,.97)}
 }
+/* ---------------------------------------------------------------------------
+   ADATS header colour, 2026-08-12, at Siavash's explicit instruction, which
+   overrides the project isolation law for this component only. Scoped to the
+   header: declared on .topbar and .site-nav, never on :root, so the rest of the
+   site keeps its own ink and brass.
+   ONLY the colour is taken. This header's motion is deliberately NOT replaced:
+   it condenses on background, shadow and blur alone, while ADATS animates
+   min-height and padding, which its own REPO-MAP records as failing the
+   animate-transform-only rule. Taking that would be a regression.
+   Nexus V22 / Kavalsia Inc. / Siavash Sadighi
+   ------------------------------------------------------------------------ */
+.topbar,.site-nav{
+  --h-ink:#1a171f; --h-ink-deep:#141118;
+  --h-gold:#ffce85; --h-gold-soft:#f6dcb6;
+  --h-text:#f7f2ec;
+  --h-muted:rgba(246,240,232,.72); --h-muted-2:rgba(246,240,232,.56);
+}
+.topbar .inner{color:var(--h-muted-2)}
+.topbar b{color:var(--h-gold-soft)}
+.topbar .sep{background:rgba(255,255,255,.11)}
+.topbar a{color:var(--h-muted)}
+.topbar a:hover{color:var(--h-gold)}
+.nav-in{
+  background:linear-gradient(178deg,rgba(255,255,255,.075),rgba(255,255,255,.018) 42%,rgba(255,255,255,0) 78%),
+             rgba(23,19,28,.34);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.11),inset 0 0 0 1px rgba(255,255,255,.05),
+             0 20px 50px -28px rgba(0,0,0,.92);
+}
+.site-nav.stuck .nav-in{
+  background:linear-gradient(178deg,rgba(255,255,255,.055),rgba(255,255,255,.012) 42%,rgba(255,255,255,0) 78%),
+             rgba(19,16,23,.56);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08),inset 0 0 0 1px rgba(255,255,255,.045),
+             0 24px 56px -28px rgba(0,0,0,.95);
+}@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .nav-in{background:rgba(23,19,28,.95)}
+  .site-nav.stuck .nav-in{background:rgba(19,16,23,.97)}
+}
+.nav-logo{color:var(--h-text)}
+.nav-logo .seal{color:var(--h-gold)}
+.nav-links a{color:var(--h-muted)}
+.nav-links a:hover{color:#fff}
+.nav-cta{background:var(--h-gold)}
 .nav-logo{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-size:20px;
   letter-spacing:.01em;min-width:0;overflow:hidden}
 .nav-logo span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -233,7 +275,7 @@ p{text-wrap:pretty}
 .discs{position:relative}
 .disc{border-top:1px solid var(--line)}
 .disc-in{max-width:1240px;margin:0 auto;padding:0 30px;display:grid;
-  grid-template-columns:1fr 1fr;align-items:stretch}
+  grid-template-columns:1fr 1fr;column-gap:72px;align-items:stretch}
 .disc-photo{position:relative;min-height:min(76vh,640px);overflow:hidden;border-radius:22px;
   box-shadow:0 0 0 1px rgba(242,238,230,.08) inset,0 46px 96px -50px rgba(0,0,0,.95)}
 .disc-photo::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;z-index:1;
@@ -244,8 +286,7 @@ p{text-wrap:pretty}
 .disc-photo figcaption{position:absolute;left:22px;bottom:20px;border-radius:999px;z-index:2;font-size:11.5px;
   letter-spacing:.09em;text-transform:uppercase;color:var(--text);
   background:rgba(11,10,9,.74);padding:7px 13px;backdrop-filter:blur(6px)}
-.disc-body{padding-block:88px;padding-inline-start:72px;padding-inline-end:0;
-  display:flex;flex-direction:column;justify-content:center}
+.disc-body{padding-block:88px;display:flex;flex-direction:column;justify-content:center}
 .disc.flip .disc-in{direction:rtl}
 .disc.flip .disc-in>*{direction:ltr}
 
@@ -260,8 +301,8 @@ p{text-wrap:pretty}
 .disc-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;margin-bottom:36px}@media (max-width:1200px){.disc-list{grid-template-columns:1fr}}
 .disc-list li{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.55;color:var(--text2)}
 .disc-list svg{width:15px;height:15px;flex-shrink:0;margin-top:6px;color:var(--brass)}
-.disc-foot{display:flex;align-items:center;justify-content:space-between;gap:26px 34px;flex-wrap:wrap;
-  padding:22px 24px;border-radius:18px;
+.disc-foot{display:flex;align-items:center;justify-content:space-between;gap:18px 30px;flex-wrap:wrap;
+  padding:20px 22px;border-radius:18px;
   background:linear-gradient(158deg,rgba(242,238,230,.06),rgba(242,238,230,.018) 52%,rgba(242,238,230,0))}
 .disc-rates{display:flex;align-items:flex-end;gap:30px;flex-wrap:wrap}
 .rate{display:flex;flex-direction:column;gap:4px;position:relative}
@@ -273,7 +314,7 @@ p{text-wrap:pretty}
   font-variant-numeric:tabular-nums;letter-spacing:-.01em}
 .rate span{font-size:12.5px;color:var(--muted);letter-spacing:.012em;white-space:nowrap}
 .rate.pack b{color:var(--brass)}
-.disc-cta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-left:auto}
+.disc-cta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-left:auto}@media (max-width:1500px){.disc-cta{margin-left:0;width:100%;justify-content:space-between}}
 /* plain type, not a bordered chip */
 .disc-free{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:500;
   letter-spacing:.1em;text-transform:uppercase;color:var(--brass);white-space:nowrap}
@@ -302,10 +343,11 @@ p{text-wrap:pretty}
    dissolve looks like a rendering fault rather than a transition. */
 .discs.is-stage .disc{position:absolute;inset:0;border-top:0;display:flex;align-items:center;
   background:var(--ink)}
-.discs.is-stage .disc-in{width:100%;height:100%;align-items:center;padding-inline-start:132px;padding-inline-end:30px}
+.discs.is-stage .disc-in{width:100%;height:100%;align-items:center;column-gap:66px;
+  padding-inline-start:132px;padding-inline-end:30px}
 
 .discs.is-stage .disc-photo{min-height:0;height:76vh;align-self:center}
-.discs.is-stage .disc-body{padding:0;padding-inline-start:66px;max-height:82vh;overflow:hidden}@media (max-height:1000px){
+.discs.is-stage .disc-body{padding:0;max-height:82vh;overflow:hidden}@media (max-height:1000px){
   .discs.is-stage .disc-name{font-size:clamp(32px,3.6vw,48px)}
   .discs.is-stage .disc-ix{margin-bottom:12px}
   .discs.is-stage .disc-for{margin-bottom:18px;font-size:14px}
@@ -354,8 +396,12 @@ p{text-wrap:pretty}
   transition:background .5s var(--ease),box-shadow .5s var(--ease)}
 .term:hover{background:linear-gradient(168deg,rgba(216,167,91,.13),rgba(216,167,91,.03) 52%,rgba(242,238,230,0));
   box-shadow:0 0 0 1px rgba(216,167,91,.22) inset}
+.term-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px}
 .term-fig{font-family:var(--serif);font-size:clamp(40px,3.4vw,54px);line-height:.9;
-  color:var(--brass);opacity:.34;margin-bottom:14px;font-variant-numeric:tabular-nums}
+  color:var(--brass);opacity:.34;font-variant-numeric:tabular-nums}
+.term-ico{width:34px;height:34px;flex:none;color:var(--brass);opacity:.55;
+  transition:opacity .45s var(--ease),transform .45s var(--ease)}
+.term:hover .term-ico{opacity:1;transform:translateY(-2px)}
 .term-n{font-size:10.5px;font-weight:500;color:var(--brass);letter-spacing:var(--track-label);
   text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:11px}
 .term-n::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--brass),transparent);opacity:.45}
@@ -567,7 +613,8 @@ footer{padding:78px 0 48px;margin-top:70px;position:relative;background:var(--in
   .tp-cue{display:none}
   .disc-in{grid-template-columns:1fr}
   .disc-photo{min-height:min(52vh,400px);margin:0 -30px}
-  .disc-body,.disc.flip .disc-body{padding:52px 0 72px}
+  .disc-body{padding:52px 0 72px}
+  .disc-in{column-gap:0}
   .disc.flip .disc-in{direction:ltr}
   .rail{grid-template-columns:1fr 1fr;margin-bottom:100px}
   
@@ -719,6 +766,24 @@ html[lang="fa"] em,html[lang="fa"] .disc-for{font-style:normal}
   .tp-lead{font-size:16.5px;line-height:1.48}
   .fac-copy p:first-of-type{font-size:17px;line-height:1.48}
   .disc-list li{font-size:14.5px;line-height:1.44}
+}@media (max-width:760px){
+  .nav-logo{min-height:44px;align-items:center}
+  .nav-cta{min-height:44px;display:inline-flex;align-items:center;padding:11px 15px}
+  .lang button{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;padding:5px 9px}
+  .footer-mail{display:inline-flex;min-height:44px;align-items:center}
+  .footer-links a{min-height:40px;display:inline-flex;align-items:center}
+  .disc-link,.btn-quiet{min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+  .cat-link{min-height:44px;display:inline-flex;align-items:center}
+  /* nothing under 12.5px on a phone */
+  .topbar .inner{font-size:12.5px}
+  .disc-for{font-size:14px}
+  .disc-free,.term-n,.field label,.footer-head,.art-top,.tp-cue{font-size:12.5px}
+  .rate span{font-size:12.5px}
+  .item-spec{font-size:14px}
+  /* Links inside a sentence are exempt from the 44px rule (WCAG 2.5.8) and
+     forcing the height would break the line. Vertical padding on an inline
+     element grows the hit area without moving anything. */
+  .shop-note a,.footer-bottom a{padding-block:9px}
 }
 
 /* Journal, temporarily hidden. Delete this rule to bring it back. */
@@ -946,25 +1011,37 @@ body[data-page-depth="1"] article .intro a{color:var(--text,#0a0a0a) !important;
       </div>
       <div class="rail" id="rail">
         <div class="term">
-          <div class="term-fig">01</div>
+          <div class="term-top">
+            <div class="term-fig">01</div>
+            <svg class="term-ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M7 26V8l16-3v15"/><ellipse cx="4.6" cy="26" rx="3.4" ry="2.6"/><ellipse cx="20.6" cy="23" rx="3.4" ry="2.6"/><path d="M7 12l16-3"/></svg>
+          </div>
           <div class="term-n">Term one</div>
           <h3 class="term-h">Rhythm, out loud</h3>
           <p class="term-p">Counting and subdivision until you can feel time without a metronome granting permission. Pitch can wait. Rhythm is the hardest thing to repair later, so it goes first.</p>
         </div>
         <div class="term">
-          <div class="term-fig">02</div>
+          <div class="term-top">
+            <div class="term-fig">02</div>
+            <svg class="term-ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h24M4 14h24M4 20h24M4 26h24" opacity=".45"/><path d="M12 5c-3 4-3 8 0 12s3 8 0 11" stroke-width="1.6"/><circle cx="21" cy="17" r="3" fill="currentColor" stroke="none"/><path d="M24 17V7" stroke-linecap="round"/></svg>
+          </div>
           <div class="term-n">Term two</div>
           <h3 class="term-h">Reading by shape</h3>
           <p class="term-p">Intervals and contour instead of naming every note. You start reading a phrase the way you read a word, in one movement.</p>
         </div>
         <div class="term">
-          <div class="term-fig">03</div>
+          <div class="term-top">
+            <div class="term-fig">03</div>
+            <svg class="term-ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M6 26 26 6" stroke-linecap="round"/><path d="M6 26l-2 2M26 6l2-2" stroke-linecap="round"/><circle cx="10" cy="22" r="2.6"/><circle cx="22" cy="10" r="2.6"/><path d="M14.5 17.5h3" stroke-linecap="round"/></svg>
+          </div>
           <div class="term-n">Term three</div>
           <h3 class="term-h">Technique on demand</h3>
           <p class="term-p">Scales, stick control and bowing, introduced where the music needs them. Technique practised for its own sake gets dropped.</p>
         </div>
         <div class="term">
-          <div class="term-fig">04</div>
+          <div class="term-top">
+            <div class="term-fig">04</div>
+            <svg class="term-ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="12" r="4"/><path d="M3 27c0-3.9 3.1-6.4 7-6.4s7 2.5 7 6.4"/><circle cx="22" cy="14" r="3.4"/><path d="M17.5 27c0-3.4 2-5.6 4.5-5.6s4.5 2.2 4.5 5.6"/><path d="M27 5v7" stroke-linecap="round"/><circle cx="25.6" cy="12.4" r="1.6" fill="currentColor" stroke="none"/></svg>
+          </div>
           <div class="term-n">Term four</div>
           <h3 class="term-h">Other people</h3>
           <p class="term-p">Playing with other people, holding time against a click, reading a page you have never seen. Everything before this was preparation.</p>
