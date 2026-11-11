@@ -216,7 +216,8 @@
     "posted_iso": "2026-06-07",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Sight-Reading"
   },
   {
     "title": "How Google's 2023 AI Music Tools Shook Up Music Education (And What Teachers Actually Think)",
@@ -235,7 +236,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Music Theory"
   },
   {
     "title": "Musicnotes Pro Hit 4 Million Users in 2022. Music Teachers Took Notice.",
@@ -254,7 +256,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Sight-Reading"
   },
   {
     "title": "Classical Musicians Can Improvise. They Just Don't Know It Yet.",
@@ -272,7 +275,8 @@
     "posted_iso": "2026-07-01",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Sight-Reading"
   },
   {
     "title": "Sight Reading Factory Added AI Feedback in 2022 and Teachers Noticed",
@@ -291,7 +295,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Sight-Reading"
   },
   {
     "title": "The Year Piano Apps Filled Every Empty Practice Room",
@@ -309,7 +314,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Sight-Reading"
   },
   {
     "title": "The Two-Bar Rule That Fixed My Students' Hardest Passages",
@@ -326,7 +332,8 @@
     "posted_iso": "2026-07-15",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Rhythm"
   },
   {
     "title": "The Metronome Is a Ruler, Not a Teacher",
@@ -343,7 +350,8 @@
     "posted_iso": "2026-07-17",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Rhythm"
   },
   {
     "title": "Slow Practice Works, but Only at the Speed of No Mistakes",
@@ -361,6 +369,7 @@
     "posted_iso": "2026-07-19",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Practice Systems"
   }
 ]
