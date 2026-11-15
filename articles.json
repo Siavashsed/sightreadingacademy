@@ -371,5 +371,41 @@
       "en"
     ],
     "category": "Practice Systems"
+  },
+  {
+    "title": "Wrong Note, Bar 23: Why Professionals Never Stop to Fix It",
+    "slug": "keep-going-rule-recover-mistakes-mid-piece",
+    "meta_description": "The keep-going rule pros use to recover from mistakes mid-piece: protect the pulse, find the next downbeat, and fix it later in the practice room.",
+    "date": "November 15, 2026",
+    "date_iso": "2026-11-15",
+    "author": "Tom Clarke",
+    "image": "https://images.pexels.com/photos/17480199/pexels-photo-17480199.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "frontiersin.org",
+      "journals.sagepub.com"
+    ],
+    "posted_iso": "2026-11-15",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The ESSER Cliff Is Coming for Your School's Music Room",
+    "slug": "esser-funding-cliff-music-education-2023",
+    "meta_description": "In 2023 music programs learned their ESSER relief money had an expiration date. What it bought, what it cost, and where the last dollars should go.",
+    "date": "November 13, 2023",
+    "date_iso": "2023-11-13",
+    "author": "Rachel Kim",
+    "image": "https://images.pexels.com/photos/6671594/pexels-photo-6671594.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "oese.ed.gov",
+      "edunomicslab.org",
+      "artseddata.org"
+    ],
+    "posted_iso": "2026-11-15",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
