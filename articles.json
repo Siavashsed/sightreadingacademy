@@ -407,5 +407,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Sight-Reading Is Correct and Still Sounds Wrong. Here's Why.",
+    "slug": "sight-reading-dynamics-and-articulation",
+    "meta_description": "Sight-reading dynamics and articulation is a separate skill from reading notes. A working drummer, pianist and violinist explain how to train it.",
+    "date": "November 16, 2026",
+    "date_iso": "2026-11-16",
+    "author": "Rachel Kim",
+    "image": "https://images.pexels.com/photos/7521177/pexels-photo-7521177.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "doi.org",
+      "journals.sagepub.com"
+    ],
+    "posted_iso": "2026-11-16",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
