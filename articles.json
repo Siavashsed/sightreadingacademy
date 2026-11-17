@@ -424,5 +424,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Stop Shifting Mid-Phrase: Violin Sight-Reading Lives in Third Position",
+    "slug": "violin-sight-reading-position-shifts",
+    "meta_description": "Sight-reading position shifts on violin: when to move, when to stay put, and the guide-note habit that keeps you on pitch at first sight.",
+    "date": "November 17, 2026",
+    "date_iso": "2026-11-17",
+    "author": "Jonas Eklund",
+    "image": "https://images.pexels.com/photos/834980/pexels-photo-834980.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "tandfonline.com",
+      "journals.sagepub.com"
+    ],
+    "posted_iso": "2026-11-17",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
