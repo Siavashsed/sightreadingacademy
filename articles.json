@@ -441,5 +441,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "One Rhythm, Three Musicians, and Three Different Ways to Get It Wrong",
+    "slug": "drummers-pianists-violinists-read-rhythm",
+    "meta_description": "Drummers, pianists and violinists read the same rhythm differently. A working teacher explains why, and which drill fixes each instrument's blind spot.",
+    "date": "November 18, 2026",
+    "date_iso": "2026-11-18",
+    "author": "Rachel Kim",
+    "image": "https://images.pexels.com/photos/9009614/pexels-photo-9009614.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "sciencedirect.com",
+      "link.springer.com",
+      "jneurosci.org"
+    ],
+    "posted_iso": "2026-11-18",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
