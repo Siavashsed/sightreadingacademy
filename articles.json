@@ -477,5 +477,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Fifteen Minutes a Day Beats an Hour on Sunday",
+    "slug": "fifteen-minute-sight-reading-fluency-plan",
+    "meta_description": "A 15-minute daily sight-reading routine from working drum, piano and violin teachers: five blocks, no busywork, and why short sessions beat long ones.",
+    "date": "November 20, 2026",
+    "date_iso": "2026-11-20",
+    "author": "Tom Clarke",
+    "image": "https://images.pexels.com/photos/10222171/pexels-photo-10222171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "tandfonline.com",
+      "doi.org"
+    ],
+    "posted_iso": "2026-11-20",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
