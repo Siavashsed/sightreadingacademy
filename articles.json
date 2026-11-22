@@ -511,5 +511,41 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Ears Already Know the Groove. A Drum Chart Is Just the Receipt",
+    "slug": "read-drum-chart-by-ear-player",
+    "meta_description": "How to read a drum chart when you've only played by ear: start with the kick, count out loud, and treat the page as a map of what you already hear.",
+    "date": "November 22, 2026",
+    "date_iso": "2026-11-22",
+    "author": "Henrik Nyborg",
+    "image": "https://images.pexels.com/photos/804552/pexels-photo-804552.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "journals.sagepub.com",
+      "pas.org"
+    ],
+    "posted_iso": "2026-11-22",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The 2021 Music Aerosol Findings Put Lessons Back in the Room",
+    "slug": "2021-music-aerosol-study-lessons",
+    "meta_description": "The 2021 performing arts aerosol study findings changed how teachers returned to in-person lessons. Here's what held up and what didn't.",
+    "date": "October 16, 2021",
+    "date_iso": "2021-10-16",
+    "author": "Tom Clarke",
+    "image": "https://images.pexels.com/photos/8190786/pexels-photo-8190786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nfhs.org",
+      "nammfoundation.org",
+      "nafme.org"
+    ],
+    "posted_iso": "2026-11-22",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
