@@ -547,5 +547,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Bow Arm Is Why You're Out of Tune",
+    "slug": "bow-control-intonation-one-skill",
+    "meta_description": "Bow control and intonation are one skill. A violin teacher explains why heavy bow pressure bends your pitch and how to practice both together.",
+    "date": "November 23, 2026",
+    "date_iso": "2026-11-23",
+    "author": "Jordan Webb",
+    "image": "https://images.pexels.com/photos/7095046/pexels-photo-7095046.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "acousticalsociety.org",
+      "psycnet.apa.org"
+    ],
+    "posted_iso": "2026-11-23",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
